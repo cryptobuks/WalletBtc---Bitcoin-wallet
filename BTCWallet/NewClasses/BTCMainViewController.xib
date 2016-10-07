@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BTCMainViewController">
+            <connections>
+                <outlet property="amountLabel" destination="eNa-pi-4R6" id="vPI-44-Dkf"/>
+                <outlet property="localAmountLabel" destination="JDx-vU-Blc" id="JpO-8G-7K0"/>
+                <outlet property="progressView" destination="b85-a1-ZzI" id="YnR-IP-HAe"/>
+                <outlet property="tableView" destination="gmk-O2-UNi" id="lxZ-cN-PZN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gray-bg" translatesAutoresizingMaskIntoConstraints="NO" id="qU6-Ub-a7C"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gmk-O2-UNi">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Pnz-fB-1Jq"/>
+                        <outlet property="delegate" destination="-1" id="d2O-pw-XOS"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC 500.55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNa-pi-4R6">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="ohQ-et-Itz"/>
+                        <constraint firstAttribute="width" constant="280" id="xg2-15-XzX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                    <color key="textColor" red="0.94509803921568625" green="0.58431372549019611" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b85-a1-ZzI" customClass="BTCProgressView">
+                    <color key="backgroundColor" red="0.45378629429133854" green="0.45378629429133854" blue="0.45378629429133854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="91c-f3-2tG"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 23434.534" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDx-vU-Blc">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="jj5-3u-IVH"/>
+                        <constraint firstAttribute="width" constant="280" id="zKL-Ug-UMc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                    <color key="textColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFh-d2-rhj">
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.58431372549019611" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Mon-Vb-HBH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="ZFh-d2-rhj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="665-pn-MMP"/>
+                <constraint firstAttribute="trailing" secondItem="gmk-O2-UNi" secondAttribute="trailing" constant="5" id="9f4-4D-NKD"/>
+                <constraint firstItem="JDx-vU-Blc" firstAttribute="top" secondItem="eNa-pi-4R6" secondAttribute="bottom" constant="8" id="EBA-tW-cF3"/>
+                <constraint firstAttribute="trailing" secondItem="b85-a1-ZzI" secondAttribute="trailing" constant="18" id="FUk-MO-9WU"/>
+                <constraint firstItem="qU6-Ub-a7C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Suj-h4-rS8"/>
+                <constraint firstAttribute="bottom" secondItem="qU6-Ub-a7C" secondAttribute="bottom" id="W0f-sc-JFw"/>
+                <constraint firstItem="eNa-pi-4R6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XcR-qJ-0ur"/>
+                <constraint firstItem="b85-a1-ZzI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="Yfo-8d-1uX"/>
+                <constraint firstItem="eNa-pi-4R6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="92" id="Ys8-oC-zq3"/>
+                <constraint firstAttribute="trailing" secondItem="qU6-Ub-a7C" secondAttribute="trailing" id="cvj-if-QMQ"/>
+                <constraint firstItem="ZFh-d2-rhj" firstAttribute="top" secondItem="b85-a1-ZzI" secondAttribute="bottom" constant="8" id="lWt-7c-nQ4"/>
+                <constraint firstItem="gmk-O2-UNi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="myy-Aw-P14"/>
+                <constraint firstItem="gmk-O2-UNi" firstAttribute="top" secondItem="b85-a1-ZzI" secondAttribute="bottom" constant="8" id="pv7-Rt-mSx"/>
+                <constraint firstItem="b85-a1-ZzI" firstAttribute="top" secondItem="JDx-vU-Blc" secondAttribute="bottom" constant="19" id="qsb-AS-ZMo"/>
+                <constraint firstAttribute="bottom" secondItem="gmk-O2-UNi" secondAttribute="bottom" id="ric-Z1-AcU"/>
+                <constraint firstItem="qU6-Ub-a7C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-9" id="slE-y5-DXP"/>
+                <constraint firstAttribute="trailing" secondItem="ZFh-d2-rhj" secondAttribute="trailing" constant="5" id="wpN-d0-jH1"/>
+                <constraint firstItem="JDx-vU-Blc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yUu-IK-LVl"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="xne-E5-kKo" appends="YES" id="t4N-Fn-7H8"/>
+                <outletCollection property="gestureRecognizers" destination="dd6-Cp-Th8" appends="YES" id="VIo-fp-moc"/>
+            </connections>
+            <point key="canvasLocation" x="150.5" y="432.5"/>
+        </view>
+        <swipeGestureRecognizer direction="left" id="xne-E5-kKo">
+            <connections>
+                <action selector="goRecivie:" destination="-1" id="jAV-Fy-sMx"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="right" id="dd6-Cp-Th8">
+            <connections>
+                <action selector="goSend:" destination="-1" id="XNH-WH-Wns"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="gray-bg" width="2000" height="3000"/>
+    </resources>
+</document>

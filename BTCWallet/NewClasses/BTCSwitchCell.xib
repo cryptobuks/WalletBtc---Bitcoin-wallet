@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SwitchCell" id="u9z-QW-zKI" customClass="BTCUserDefaultsSwitchCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9z-QW-zKI" id="Sd9-qj-qXa">
+                <frame key="frameInset" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="1100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="349" translatesAutoresizingMaskIntoConstraints="NO" id="Rct-Kf-Cp3">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" tag="1101" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2c-ai-rJS">
+                        <connections>
+                            <action selector="didUpdateSwitch:" destination="u9z-QW-zKI" eventType="valueChanged" id="EQz-YI-L6S"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="w2c-ai-rJS" firstAttribute="trailing" secondItem="Sd9-qj-qXa" secondAttribute="trailingMargin" constant="-10" id="6wu-hL-HM8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Rct-Kf-Cp3" secondAttribute="trailing" id="GzX-jX-ebW"/>
+                    <constraint firstItem="Rct-Kf-Cp3" firstAttribute="top" secondItem="Sd9-qj-qXa" secondAttribute="topMargin" id="MUW-PO-AYJ"/>
+                    <constraint firstItem="Rct-Kf-Cp3" firstAttribute="leading" secondItem="Sd9-qj-qXa" secondAttribute="leadingMargin" constant="10" id="g5A-j8-oSP"/>
+                    <constraint firstItem="w2c-ai-rJS" firstAttribute="centerY" secondItem="Sd9-qj-qXa" secondAttribute="centerY" id="qZe-c6-t8K"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Rct-Kf-Cp3" secondAttribute="bottom" id="tkC-7W-JnZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.67000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="theSwitch" destination="w2c-ai-rJS" id="Sau-Ea-CkV"/>
+                <outlet property="titleLabel" destination="Rct-Kf-Cp3" id="5vy-ry-GMl"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

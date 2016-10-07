@@ -1,0 +1,1867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220128D31C753C670001CAC1 /* BTCSocketHelpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 220128D11C753C670001CAC1 /* BTCSocketHelpers.c */; };
+		222040C61C1A1940005CE1C3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222040C51C1A1940005CE1C3 /* WebKit.framework */; };
+		222E7F561C46E9B8009AB45D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222E7F551C46E9B8009AB45D /* Security.framework */; };
+		222E7F581C46E9BE009AB45D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222E7F571C46E9BE009AB45D /* SystemConfiguration.framework */; };
+		225383011C694D7400968BEE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225383001C694D7400968BEE /* CoreLocation.framework */; };
+		2284B63F1C7BD28F0012ECDF /* BTCAWKeypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F45A0A1C30EAB700B07A15 /* BTCAWKeypad.swift */; };
+		22B6A4481C0E963900673913 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B6A4471C0E963900673913 /* libbz2.tbd */; };
+		22D3613D1C56F2CD0057CF76 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D3613C1C56F2CD0057CF76 /* libsqlite3.tbd */; };
+		22DE8CF11D02407F007F07F3 /* BTCWalletConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE8CF01D02407F007F07F3 /* BTCWalletConstants.m */; };
+		22DE8CF21D02407F007F07F3 /* BTCWalletConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE8CF01D02407F007F07F3 /* BTCWalletConstants.m */; };
+		22F04A001C9714EF00F137D8 /* BTCUserDefaultsSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F45A0D1C3326CC00B07A15 /* BTCUserDefaultsSwitchCell.m */; };
+		28BABAE51D911FA8008A1BB8 /* BTCWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28BABAE21D911FA8008A1BB8 /* BTCWallet.xcdatamodeld */; };
+		2E8351D81DA53FD600937D26 /* libFlurry_7.6.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8351D71DA53FD600937D26 /* libFlurry_7.6.6.a */; };
+		752E28AA19234AE300DB5A3C /* BTCAddressEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E289F19234AE300DB5A3C /* BTCAddressEntity.m */; };
+		752E28AB19234AE300DB5A3C /* BTCMerkleBlockEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A119234AE300DB5A3C /* BTCMerkleBlockEntity.m */; };
+		752E28AC19234AE300DB5A3C /* BTCPeerEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A319234AE300DB5A3C /* BTCPeerEntity.m */; };
+		752E28AD19234AE300DB5A3C /* BTCTransactionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A519234AE300DB5A3C /* BTCTransactionEntity.m */; };
+		752E28AE19234AE300DB5A3C /* BTCTxInputEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A719234AE300DB5A3C /* BTCTxInputEntity.m */; };
+		752E28AF19234AE300DB5A3C /* BTCTxOutputEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28A919234AE300DB5A3C /* BTCTxOutputEntity.m */; };
+		752E28CE19234C3600DB5A3C /* BTCBIP32Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B119234C3600DB5A3C /* BTCBIP32Sequence.m */; };
+		752E28CF19234C3600DB5A3C /* BTCBIP39Mnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B319234C3600DB5A3C /* BTCBIP39Mnemonic.m */; };
+		752E28D019234C3600DB5A3C /* BTCBloomFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B519234C3600DB5A3C /* BTCBloomFilter.m */; };
+		752E28D119234C3600DB5A3C /* BTCKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B719234C3600DB5A3C /* BTCKey.m */; };
+		752E28D219234C3600DB5A3C /* BTCKey+BIP38.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28B919234C3600DB5A3C /* BTCKey+BIP38.m */; };
+		752E28D319234C3600DB5A3C /* BTCMerkleBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28BC19234C3600DB5A3C /* BTCMerkleBlock.m */; };
+		752E28D419234C3600DB5A3C /* BTCPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28BF19234C3600DB5A3C /* BTCPaymentProtocol.m */; };
+		752E28D519234C3600DB5A3C /* BTCPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C119234C3600DB5A3C /* BTCPaymentRequest.m */; };
+		752E28D619234C3600DB5A3C /* BTCPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C319234C3600DB5A3C /* BTCPeer.m */; };
+		752E28D819234C3600DB5A3C /* BTCPeerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C719234C3600DB5A3C /* BTCPeerManager.m */; };
+		752E28D919234C3600DB5A3C /* BTCTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28C919234C3600DB5A3C /* BTCTransaction.m */; };
+		752E28DA19234C3600DB5A3C /* BTCWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28CB19234C3600DB5A3C /* BTCWallet.m */; };
+		752E28DB19234C3600DB5A3C /* BTCWalletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28CD19234C3600DB5A3C /* BTCWalletManager.m */; };
+		752E28E719234DA200DB5A3C /* NSData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28DE19234DA200DB5A3C /* NSData+Bitcoin.m */; };
+		752E28E919234DA200DB5A3C /* NSManagedObject+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28E219234DA200DB5A3C /* NSManagedObject+Sugar.m */; };
+		752E28EA19234DA200DB5A3C /* NSMutableData+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28E419234DA200DB5A3C /* NSMutableData+Bitcoin.m */; };
+		752E28EB19234DA200DB5A3C /* NSString+Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28E619234DA200DB5A3C /* NSString+Bitcoin.m */; };
+		752E28F119234E8100DB5A3C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 752E28F019234E8100DB5A3C /* Reachability.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		752E28F719235B3000DB5A3C /* FixedPeers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752E28F519235B3000DB5A3C /* FixedPeers.plist */; };
+		754119E01CDA93FF0042DC51 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE12BE61B2DEE7F00895CC5 /* NotificationCenter.framework */; };
+		7548CF3719556FD700EF827F /* BTCCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7548CF3619556FD700EF827F /* BTCCopyLabel.m */; };
+		757E09991ADB8EEB006FD352 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 757E09971ADB8EEB006FD352 /* Localizable.strings */; };
+		759816E719357D6F005060EA /* BTCBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 759816E619357D6F005060EA /* BTCBubbleView.m */; };
+		75AA5F55194143D5003F23BD /* BTCBouncyBurgerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA5F54194143D5003F23BD /* BTCBouncyBurgerButton.m */; };
+		75ABFB661B55BB2300B0B5CC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ABFB681B55BB2300B0B5CC /* MainInterface.storyboard */; };
+		75C0E3BF1B1BA294007BC531 /* BIP39Words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75C0E3C11B1BA294007BC531 /* BIP39Words.plist */; };
+		75D5F3CE191EC270004AB296 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D5F3CD191EC270004AB296 /* main.m */; };
+		75D5F3D2191EC270004AB296 /* BTCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D5F3D1191EC270004AB296 /* BTCAppDelegate.m */; };
+		75E2503F1B7691C900A2BB2B /* BTCBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 759816E619357D6F005060EA /* BTCBubbleView.m */; };
+		75E83CF61B5F997A0038FB70 /* coinflip.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 75E83CF51B5F997A0038FB70 /* coinflip.aiff */; };
+		75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F2E0D21BE9803900EAE861 /* Launch Screen.storyboard */; };
+		75F2E0D61BEAA6A400EAE861 /* BTCTxMetadataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F2E0D51BEAA6A400EAE861 /* BTCTxMetadataEntity.m */; };
+		8402AE341D65BAD30013CCEF /* BTCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8402AE321D65BAD30013CCEF /* BTCMainViewController.m */; };
+		8402AE351D65BAD30013CCEF /* BTCMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8402AE331D65BAD30013CCEF /* BTCMainViewController.xib */; };
+		8402AE391D65BCDB0013CCEF /* BTCReceiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8402AE371D65BCDB0013CCEF /* BTCReceiveViewController.m */; };
+		8402AE3A1D65BCDB0013CCEF /* BTCReceiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8402AE381D65BCDB0013CCEF /* BTCReceiveViewController.xib */; };
+		840531A71D6C330400ED307A /* BTCAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840531A51D6C330400ED307A /* BTCAboutViewController.m */; };
+		840531A81D6C330400ED307A /* BTCAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840531A61D6C330400ED307A /* BTCAboutViewController.xib */; };
+		840B3CD01D6DEAE50021328C /* BTCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B3CCF1D6DEAE50021328C /* BTCAnimation.m */; };
+		840E460A1D7861490094E8DA /* BTCUnitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840E46091D7861490094E8DA /* BTCUnitCell.xib */; };
+		841E6F771D70437C00611974 /* BTCProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E6F761D70437C00611974 /* BTCProgressView.m */; };
+		842B0A7E1D74152A0090DC4C /* BTCPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842B0A7C1D74152A0090DC4C /* BTCPasswordViewController.m */; };
+		842B0A7F1D74152A0090DC4C /* BTCPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842B0A7D1D74152A0090DC4C /* BTCPasswordViewController.xib */; };
+		842D98FB1D7D63E800DECAFA /* BTCFeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842D98FA1D7D63E800DECAFA /* BTCFeeCell.xib */; };
+		842F0A711D758FB0003F49E1 /* BTCPasswordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 842F0A701D758FB0003F49E1 /* BTCPasswordButton.m */; };
+		8433485C1D62EB810033FEF6 /* BTCRestoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8433485A1D62EB810033FEF6 /* BTCRestoreViewController.m */; };
+		8433485D1D62EB810033FEF6 /* BTCRestoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8433485B1D62EB810033FEF6 /* BTCRestoreViewController.xib */; };
+		843348611D62FB190033FEF6 /* BTCStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8433485F1D62FB190033FEF6 /* BTCStartViewController.m */; };
+		843348621D62FB190033FEF6 /* BTCStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843348601D62FB190033FEF6 /* BTCStartViewController.xib */; };
+		843348661D6304F30033FEF6 /* BTCKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843348641D6304F30033FEF6 /* BTCKeyViewController.m */; };
+		843348671D6304F30033FEF6 /* BTCKeyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843348651D6304F30033FEF6 /* BTCKeyViewController.xib */; };
+		8433486B1D63117D0033FEF6 /* BTCSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843348691D63117D0033FEF6 /* BTCSendViewController.m */; };
+		8433486C1D63117D0033FEF6 /* BTCSendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8433486A1D63117D0033FEF6 /* BTCSendViewController.xib */; };
+		843348731D6315000033FEF6 /* BTCNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843348711D6315000033FEF6 /* BTCNumberViewController.m */; };
+		843348741D6315000033FEF6 /* BTCNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843348721D6315000033FEF6 /* BTCNumberViewController.xib */; };
+		843348781D6361760033FEF6 /* BTCCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843348761D6361760033FEF6 /* BTCCameraViewController.m */; };
+		843348791D6361760033FEF6 /* BTCCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843348771D6361760033FEF6 /* BTCCameraViewController.xib */; };
+		845A37F01D9BCCF800B94DF5 /* BTCTextViewLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A37EF1D9BCCF800B94DF5 /* BTCTextViewLocalizable.m */; };
+		845A37F31D9BCD0D00B94DF5 /* BTCLabelLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A37F21D9BCD0D00B94DF5 /* BTCLabelLocalizable.m */; };
+		846227F41D6AE49D00D1DDE7 /* BTCTrzDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846227F21D6AE49D00D1DDE7 /* BTCTrzDetailViewController.m */; };
+		846227F51D6AE49D00D1DDE7 /* BTCTrzDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846227F31D6AE49D00D1DDE7 /* BTCTrzDetailViewController.xib */; };
+		846227F71D6AE9A800D1DDE7 /* BTCIdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846227F61D6AE9A800D1DDE7 /* BTCIdCell.xib */; };
+		846227F91D6AE9E600D1DDE7 /* BTCTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846227F81D6AE9E600D1DDE7 /* BTCTitleCell.xib */; };
+		846227FB1D6AEA3D00D1DDE7 /* BTCTrzMinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846227FA1D6AEA3D00D1DDE7 /* BTCTrzMinCell.xib */; };
+		846227FD1D6AEAA700D1DDE7 /* BTCDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846227FC1D6AEAA700D1DDE7 /* BTCDetailCell.xib */; };
+		846227FF1D6AEAED00D1DDE7 /* BTCSubtitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846227FE1D6AEAED00D1DDE7 /* BTCSubtitleCell.xib */; };
+		846228031D6AF89700D1DDE7 /* BTCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846228011D6AF89700D1DDE7 /* BTCSettingsViewController.m */; };
+		846228041D6AF89700D1DDE7 /* BTCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846228021D6AF89700D1DDE7 /* BTCSettingsViewController.xib */; };
+		846228081D6B2E5400D1DDE7 /* BTCCurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846228061D6B2E5400D1DDE7 /* BTCCurrencyViewController.m */; };
+		846228091D6B2E5400D1DDE7 /* BTCCurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846228071D6B2E5400D1DDE7 /* BTCCurrencyViewController.xib */; };
+		84FCC3801D6734F2006B0860 /* BTCNoTranzactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCC37F1D6734F2006B0860 /* BTCNoTranzactionCell.xib */; };
+		84FCC3821D673719006B0860 /* BTCTranzactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCC3811D673719006B0860 /* BTCTranzactionCell.xib */; };
+		84FCC3841D673942006B0860 /* BTCActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCC3831D673942006B0860 /* BTCActionCell.xib */; };
+		84FCC3861D673981006B0860 /* BTCDislocureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCC3851D673981006B0860 /* BTCDislocureCell.xib */; };
+		84FCC3881D674504006B0860 /* BTCSelectorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCC3871D674504006B0860 /* BTCSelectorCell.xib */; };
+		84FCC38A1D674562006B0860 /* BTCRestoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCC3891D674562006B0860 /* BTCRestoreCell.xib */; };
+		84FCC38C1D6745D3006B0860 /* BTCSelectorOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCC38B1D6745D3006B0860 /* BTCSelectorOptionCell.xib */; };
+		84FCC38E1D67460E006B0860 /* BTCSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCC38D1D67460E006B0860 /* BTCSwitchCell.xib */; };
+		84FD13CC1D8BD80E000EA4F9 /* Design.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FD13CB1D8BD80E000EA4F9 /* Design.xcassets */; };
+		84FD13CF1D8BE05C000EA4F9 /* BTCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD13CE1D8BE05C000EA4F9 /* BTCButton.m */; };
+		9C2C2A6E1DA395330059F423 /* about_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A5F1DA395330059F423 /* about_icon.png */; };
+		9C2C2A6F1DA395330059F423 /* about_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A601DA395330059F423 /* about_icon@2x.png */; };
+		9C2C2A701DA395330059F423 /* about_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A611DA395330059F423 /* about_icon@3x.png */; };
+		9C2C2A771DA395330059F423 /* settings_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A681DA395330059F423 /* settings_icon.png */; };
+		9C2C2A781DA395330059F423 /* settings_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A691DA395330059F423 /* settings_icon@2x.png */; };
+		9C2C2A791DA395330059F423 /* settings_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A6A1DA395330059F423 /* settings_icon@3x.png */; };
+		9C2C2A7A1DA395330059F423 /* wallet_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A6B1DA395330059F423 /* wallet_icon.png */; };
+		9C2C2A7B1DA395330059F423 /* wallet_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A6C1DA395330059F423 /* wallet_icon@2x.png */; };
+		9C2C2A7C1DA395330059F423 /* wallet_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A6D1DA395330059F423 /* wallet_icon@3x.png */; };
+		9C2C2A801DA3968B0059F423 /* receive_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A7D1DA3968B0059F423 /* receive_icon.png */; };
+		9C2C2A811DA3968B0059F423 /* receive_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A7E1DA3968B0059F423 /* receive_icon@2x.png */; };
+		9C2C2A821DA3968B0059F423 /* receive_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A7F1DA3968B0059F423 /* receive_icon@3x.png */; };
+		9C2C2A861DA398A30059F423 /* send_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A831DA398A30059F423 /* send_icon.png */; };
+		9C2C2A871DA398A30059F423 /* send_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A841DA398A30059F423 /* send_icon@2x.png */; };
+		9C2C2A881DA398A30059F423 /* send_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C2A851DA398A30059F423 /* send_icon@3x.png */; };
+		9C717BA21D9E6EDD00AF0FCB /* BTCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C717BA01D9E6EDD00AF0FCB /* BTCMenuViewController.m */; };
+		9C717BA31D9E6EDD00AF0FCB /* BTCMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C717BA11D9E6EDD00AF0FCB /* BTCMenuViewController.xib */; };
+		9C717BA81D9E88FC00AF0FCB /* BTCSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C717BA51D9E88FC00AF0FCB /* BTCSideMenuViewController.m */; };
+		9C717BA91D9E88FC00AF0FCB /* BTCSideMenuOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C717BA71D9E88FC00AF0FCB /* BTCSideMenuOptions.m */; };
+		9C717BAB1D9EA2BE00AF0FCB /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C717BAA1D9EA2BE00AF0FCB /* menu_icon@2x.png */; };
+		BA4A72671BE11AFA00E39C01 /* BTCAWWeakTimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A72661BE11AFA00E39C01 /* BTCAWWeakTimerTarget.swift */; };
+		BA54D3CE1B2EA74000C9CB28 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */; };
+		BA6645961BD924EB007A6BB1 /* BTCAWTransactionRowControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6645951BD924EB007A6BB1 /* BTCAWTransactionRowControl.swift */; };
+		BA7B53501BDA9A2800355E8D /* BTCAppleWatchData.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B534F1BDA9A2800355E8D /* BTCAppleWatchData.m */; };
+		BA7B53511BDA9A2800355E8D /* BTCAppleWatchData.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B534F1BDA9A2800355E8D /* BTCAppleWatchData.m */; };
+		BA7B53541BDAA0A800355E8D /* BTCAppleWatchTransactionData.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B53531BDAA0A800355E8D /* BTCAppleWatchTransactionData.m */; };
+		BA7B53551BDAA0A800355E8D /* BTCAppleWatchTransactionData.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B53531BDAA0A800355E8D /* BTCAppleWatchTransactionData.m */; };
+		BA7B535C1BDBC36700355E8D /* BTCTransaction+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B535B1BDBC36700355E8D /* BTCTransaction+Utils.m */; };
+		BA7B53751BDBDB0500355E8D /* BTCAWWatchDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B53741BDBDB0500355E8D /* BTCAWWatchDataManager.swift */; };
+		BA7B537B1BDD1DCF00355E8D /* LoadingIndicator.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7B537A1BDD1DCF00355E8D /* LoadingIndicator.xcassets */; };
+		BA913BE21BD57E4D005A7C0E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA913BE01BD57E4D005A7C0E /* Interface.storyboard */; };
+		BA913BE41BD57E4D005A7C0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA913BE31BD57E4D005A7C0E /* Assets.xcassets */; };
+		BA913BEB1BD57E4D005A7C0E /* WatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BA913BEA1BD57E4D005A7C0E /* WatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BA913BF21BD57E4D005A7C0E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA913BF11BD57E4D005A7C0E /* ExtensionDelegate.swift */; };
+		BA913BFA1BD57E4D005A7C0E /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BA913BDE1BD57E4D005A7C0E /* WatchApp.app */; };
+		BAA0E8CA1BD9273700DF4236 /* BTCAWGlanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0E8C91BD9273700DF4236 /* BTCAWGlanceInterfaceController.swift */; };
+		BAA4843C1B3EFFAF0075C749 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA4843B1B3EFFAF0075C749 /* UIImage+Utils.m */; };
+		BAA4843D1B3EFFAF0075C749 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA4843B1B3EFFAF0075C749 /* UIImage+Utils.m */; };
+		BAA6E3EB1BD5C78500773205 /* BTCAWRootInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6E3EA1BD5C78500773205 /* BTCAWRootInterfaceController.swift */; };
+		BAA6E3EF1BD5CA0E00773205 /* BTCAWBalanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6E3EE1BD5CA0E00773205 /* BTCAWBalanceInterfaceController.swift */; };
+		BAA6E3F11BD5CA5900773205 /* BTCAWReceiveMoneyInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6E3F01BD5CA5900773205 /* BTCAWReceiveMoneyInterfaceController.swift */; };
+		BAC7B6BE1BD9C29900165B84 /* BTCPhoneWCSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7B6BD1BD9C29900165B84 /* BTCPhoneWCSessionManager.m */; };
+		BAE12BF21B2DEE7F00895CC5 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BAE12BE51B2DEE7F00895CC5 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAE12C061B2DEEF700895CC5 /* BTCTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE12C051B2DEEF700895CC5 /* BTCTodayViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		757FC2521ADA30D100A1FDF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D5F3B6191EC270004AB296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75001D3D1A1EE89500585F55;
+			remoteInfo = submodules;
+		};
+		BA913BEC1BD57E4D005A7C0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D5F3B6191EC270004AB296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA913BE91BD57E4D005A7C0E;
+			remoteInfo = "WatchApp Extension";
+		};
+		BA913BF81BD57E4D005A7C0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D5F3B6191EC270004AB296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA913BDD1BD57E4D005A7C0E;
+			remoteInfo = WatchApp;
+		};
+		BAE12BF01B2DEE7F00895CC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D5F3B6191EC270004AB296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAE12BE41B2DEE7F00895CC5;
+			remoteInfo = TodayExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA913C001BD57E4E005A7C0E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BA913BEB1BD57E4D005A7C0E /* WatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA913C021BD57E4E005A7C0E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BA913BFA1BD57E4D005A7C0E /* WatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE12BF71B2DEE7F00895CC5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BAE12BF21B2DEE7F00895CC5 /* TodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		220128D11C753C670001CAC1 /* BTCSocketHelpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BTCSocketHelpers.c; sourceTree = "<group>"; };
+		220128D21C753C670001CAC1 /* BTCSocketHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCSocketHelpers.h; sourceTree = "<group>"; };
+		222040C51C1A1940005CE1C3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		222E7F551C46E9B8009AB45D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		222E7F571C46E9BE009AB45D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		225383001C694D7400968BEE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		22B6A4471C0E963900673913 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		22D3613C1C56F2CD0057CF76 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		22DC3A221D2C8DD100A72EA5 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		22DE8CF01D02407F007F07F3 /* BTCWalletConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCWalletConstants.m; sourceTree = "<group>"; };
+		22F45A0A1C30EAB700B07A15 /* BTCAWKeypad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCAWKeypad.swift; sourceTree = "<group>"; };
+		22F45A0C1C3326CC00B07A15 /* BTCUserDefaultsSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCUserDefaultsSwitchCell.h; sourceTree = "<group>"; };
+		22F45A0D1C3326CC00B07A15 /* BTCUserDefaultsSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCUserDefaultsSwitchCell.m; sourceTree = "<group>"; };
+		22F45A0F1C3329EB00B07A15 /* BTCUserDefaultsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTCUserDefaultsConstants.h; sourceTree = "<group>"; };
+		22FF2C361BED381400B36384 /* btcwallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "btcwallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		28BABAE31D911FA8008A1BB8 /* BTCWallet 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BTCWallet 2.xcdatamodel"; sourceTree = "<group>"; };
+		28BABAE41D911FA8008A1BB8 /* BTCWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BTCWallet.xcdatamodel; sourceTree = "<group>"; };
+		2E8351D61DA53FD600937D26 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		2E8351D71DA53FD600937D26 /* libFlurry_7.6.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.6.6.a; sourceTree = "<group>"; };
+		7509C10E1AF3076100D03FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7509C1121AF3720100D03FD5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		750BF6C91AEB2417004D9893 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		750C6CC01B5C8EB60038AAE9 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		750C6CC21B5C8EB60038AAE9 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		7511E8CB1AE5FF240025F1B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7511E8CF1AE5FF2D0025F1B3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7511E8D31AE5FF390025F1B3 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7511E8D71AE5FF410025F1B3 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7511E8DF1AE5FFB50025F1B3 /* sq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sq; path = sq.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7511E8E31AE5FFCC0025F1B3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7511E8E71AE5FFD70025F1B3 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7511E8EB1AE600220025F1B3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		752E289E19234AE300DB5A3C /* BTCAddressEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCAddressEntity.h; sourceTree = "<group>"; };
+		752E289F19234AE300DB5A3C /* BTCAddressEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCAddressEntity.m; sourceTree = "<group>"; };
+		752E28A019234AE300DB5A3C /* BTCMerkleBlockEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCMerkleBlockEntity.h; sourceTree = "<group>"; };
+		752E28A119234AE300DB5A3C /* BTCMerkleBlockEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCMerkleBlockEntity.m; sourceTree = "<group>"; };
+		752E28A219234AE300DB5A3C /* BTCPeerEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCPeerEntity.h; sourceTree = "<group>"; };
+		752E28A319234AE300DB5A3C /* BTCPeerEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCPeerEntity.m; sourceTree = "<group>"; };
+		752E28A419234AE300DB5A3C /* BTCTransactionEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCTransactionEntity.h; sourceTree = "<group>"; };
+		752E28A519234AE300DB5A3C /* BTCTransactionEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCTransactionEntity.m; sourceTree = "<group>"; };
+		752E28A619234AE300DB5A3C /* BTCTxInputEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCTxInputEntity.h; sourceTree = "<group>"; };
+		752E28A719234AE300DB5A3C /* BTCTxInputEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCTxInputEntity.m; sourceTree = "<group>"; };
+		752E28A819234AE300DB5A3C /* BTCTxOutputEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCTxOutputEntity.h; sourceTree = "<group>"; };
+		752E28A919234AE300DB5A3C /* BTCTxOutputEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCTxOutputEntity.m; sourceTree = "<group>"; };
+		752E28B119234C3600DB5A3C /* BTCBIP32Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCBIP32Sequence.m; sourceTree = "<group>"; };
+		752E28B219234C3600DB5A3C /* BTCBIP39Mnemonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCBIP39Mnemonic.h; sourceTree = "<group>"; };
+		752E28B319234C3600DB5A3C /* BTCBIP39Mnemonic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCBIP39Mnemonic.m; sourceTree = "<group>"; };
+		752E28B419234C3600DB5A3C /* BTCBloomFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCBloomFilter.h; sourceTree = "<group>"; };
+		752E28B519234C3600DB5A3C /* BTCBloomFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCBloomFilter.m; sourceTree = "<group>"; };
+		752E28B619234C3600DB5A3C /* BTCKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCKey.h; sourceTree = "<group>"; };
+		752E28B719234C3600DB5A3C /* BTCKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCKey.m; sourceTree = "<group>"; };
+		752E28B819234C3600DB5A3C /* BTCKey+BIP38.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BTCKey+BIP38.h"; sourceTree = "<group>"; };
+		752E28B919234C3600DB5A3C /* BTCKey+BIP38.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BTCKey+BIP38.m"; sourceTree = "<group>"; };
+		752E28BA19234C3600DB5A3C /* BTCKeySequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCKeySequence.h; sourceTree = "<group>"; };
+		752E28BB19234C3600DB5A3C /* BTCMerkleBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCMerkleBlock.h; sourceTree = "<group>"; };
+		752E28BC19234C3600DB5A3C /* BTCMerkleBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCMerkleBlock.m; sourceTree = "<group>"; };
+		752E28BD19234C3600DB5A3C /* BTCMnemonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCMnemonic.h; sourceTree = "<group>"; };
+		752E28BE19234C3600DB5A3C /* BTCPaymentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCPaymentProtocol.h; sourceTree = "<group>"; };
+		752E28BF19234C3600DB5A3C /* BTCPaymentProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCPaymentProtocol.m; sourceTree = "<group>"; };
+		752E28C019234C3600DB5A3C /* BTCPaymentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCPaymentRequest.h; sourceTree = "<group>"; };
+		752E28C119234C3600DB5A3C /* BTCPaymentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BTCPaymentRequest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		752E28C219234C3600DB5A3C /* BTCPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCPeer.h; sourceTree = "<group>"; };
+		752E28C319234C3600DB5A3C /* BTCPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BTCPeer.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		752E28C619234C3600DB5A3C /* BTCPeerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCPeerManager.h; sourceTree = "<group>"; };
+		752E28C719234C3600DB5A3C /* BTCPeerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BTCPeerManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		752E28C819234C3600DB5A3C /* BTCTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCTransaction.h; sourceTree = "<group>"; };
+		752E28C919234C3600DB5A3C /* BTCTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCTransaction.m; sourceTree = "<group>"; };
+		752E28CA19234C3600DB5A3C /* BTCWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCWallet.h; sourceTree = "<group>"; };
+		752E28CB19234C3600DB5A3C /* BTCWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCWallet.m; sourceTree = "<group>"; };
+		752E28CC19234C3600DB5A3C /* BTCWalletManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCWalletManager.h; sourceTree = "<group>"; };
+		752E28CD19234C3600DB5A3C /* BTCWalletManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCWalletManager.m; sourceTree = "<group>"; };
+		752E28DC19234D1000DB5A3C /* BTCBIP32Sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTCBIP32Sequence.h; sourceTree = "<group>"; };
+		752E28DD19234DA200DB5A3C /* NSData+Bitcoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Bitcoin.h"; sourceTree = "<group>"; };
+		752E28DE19234DA200DB5A3C /* NSData+Bitcoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Bitcoin.m"; sourceTree = "<group>"; };
+		752E28E119234DA200DB5A3C /* NSManagedObject+Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Sugar.h"; sourceTree = "<group>"; };
+		752E28E219234DA200DB5A3C /* NSManagedObject+Sugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Sugar.m"; sourceTree = "<group>"; };
+		752E28E319234DA200DB5A3C /* NSMutableData+Bitcoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Bitcoin.h"; sourceTree = "<group>"; };
+		752E28E419234DA200DB5A3C /* NSMutableData+Bitcoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Bitcoin.m"; sourceTree = "<group>"; };
+		752E28E519234DA200DB5A3C /* NSString+Bitcoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Bitcoin.h"; sourceTree = "<group>"; };
+		752E28E619234DA200DB5A3C /* NSString+Bitcoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Bitcoin.m"; sourceTree = "<group>"; };
+		752E28EF19234E8100DB5A3C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = SOURCE_ROOT; };
+		752E28F019234E8100DB5A3C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = SOURCE_ROOT; };
+		752E28F519235B3000DB5A3C /* FixedPeers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FixedPeers.plist; sourceTree = "<group>"; };
+		754119E21CDA97820042DC51 /* main_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main_impl.h; sourceTree = "<group>"; };
+		754119E41CDA97820042DC51 /* schnorr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schnorr.h; sourceTree = "<group>"; };
+		754119E51CDA97820042DC51 /* schnorr_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schnorr_impl.h; sourceTree = "<group>"; };
+		7548CF3519556FD700EF827F /* BTCCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCCopyLabel.h; sourceTree = "<group>"; };
+		7548CF3619556FD700EF827F /* BTCCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCCopyLabel.m; sourceTree = "<group>"; };
+		756A8F131CE566F6007893E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Interface.strings; sourceTree = "<group>"; };
+		757E09981ADB8EEB006FD352 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		758B16241AA9ADC4002C65DD /* secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		758B16301AA9ADC4002C65DD /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		758B16311AA9ADC4002C65DD /* ecdsa_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa_impl.h; sourceTree = "<group>"; };
+		758B16321AA9ADC4002C65DD /* eckey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey.h; sourceTree = "<group>"; };
+		758B16331AA9ADC4002C65DD /* eckey_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey_impl.h; sourceTree = "<group>"; };
+		758B16341AA9ADC4002C65DD /* ecmult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult.h; sourceTree = "<group>"; };
+		758B16351AA9ADC4002C65DD /* ecmult_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen.h; sourceTree = "<group>"; };
+		758B16361AA9ADC4002C65DD /* ecmult_gen_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen_impl.h; sourceTree = "<group>"; };
+		758B16371AA9ADC4002C65DD /* ecmult_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_impl.h; sourceTree = "<group>"; };
+		758B16381AA9ADC4002C65DD /* field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field.h; sourceTree = "<group>"; };
+		758B16391AA9ADC4002C65DD /* field_10x26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26.h; sourceTree = "<group>"; };
+		758B163A1AA9ADC4002C65DD /* field_10x26_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26_impl.h; sourceTree = "<group>"; };
+		758B163F1AA9ADC4002C65DD /* field_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_impl.h; sourceTree = "<group>"; };
+		758B16401AA9ADC4002C65DD /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
+		758B16411AA9ADC4002C65DD /* group_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_impl.h; sourceTree = "<group>"; };
+		758B16421AA9ADC4002C65DD /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		758B16431AA9ADC4002C65DD /* hash_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_impl.h; sourceTree = "<group>"; };
+		758B164A1AA9ADC4002C65DD /* num.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num.h; sourceTree = "<group>"; };
+		758B164D1AA9ADC4002C65DD /* num_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num_impl.h; sourceTree = "<group>"; };
+		758B164E1AA9ADC4002C65DD /* scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar.h; sourceTree = "<group>"; };
+		758B16511AA9ADC4002C65DD /* scalar_8x32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32.h; sourceTree = "<group>"; };
+		758B16521AA9ADC4002C65DD /* scalar_8x32_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32_impl.h; sourceTree = "<group>"; };
+		758B16531AA9ADC4002C65DD /* scalar_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_impl.h; sourceTree = "<group>"; };
+		758B16541AA9ADC4002C65DD /* secp256k1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secp256k1.c; sourceTree = "<group>"; };
+		758B16581AA9ADC4002C65DD /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		759816E519357D6F005060EA /* BTCBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCBubbleView.h; sourceTree = "<group>"; };
+		759816E619357D6F005060EA /* BTCBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCBubbleView.m; sourceTree = "<group>"; };
+		75AA5F53194143D5003F23BD /* BTCBouncyBurgerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCBouncyBurgerButton.h; sourceTree = "<group>"; };
+		75AA5F54194143D5003F23BD /* BTCBouncyBurgerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCBouncyBurgerButton.m; sourceTree = "<group>"; };
+		75ABFB671B55BB2300B0B5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		75ABFB6A1B55BB3500B0B5CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB6C1B55BB3600B0B5CC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB6E1B55BB3800B0B5CC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB701B55BB3B00B0B5CC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB721B55BB3C00B0B5CC /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB741B55BB3D00B0B5CC /* sq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sq; path = sq.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB761B55BB3E00B0B5CC /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB781B55BB4000B0B5CC /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB7A1B55BB4200B0B5CC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB7C1B55BB4400B0B5CC /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB7E1B55BB4500B0B5CC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		75ABFB801B55BB4600B0B5CC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB821B55BB4700B0B5CC /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB841B55BB4800B0B5CC /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB861B55BB4C00B0B5CC /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB881B55BB4D00B0B5CC /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75ABFB8A1B55BB4E00B0B5CC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75C0E3C21B1BA29D007BC531 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = fr.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		75C0E3C31B1BA29F007BC531 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		75C0E3C41B1BA2A5007BC531 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		75C0E3C51B1BA2AE007BC531 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/BIP39Words.plist"; sourceTree = "<group>"; };
+		75C0E3C71B1D333F007BC531 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BIP39Words.plist; sourceTree = "<group>"; };
+		75CE194D1B9642EB000778E4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		75CE194E1B9642EB000778E4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		75CE50BD1B525D1B00DBC18C /* btcwallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = btcwallet.entitlements; sourceTree = "<group>"; };
+		75D5F3BE191EC270004AB296 /* btcwallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btcwallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D5F3C9191EC270004AB296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75D5F3CD191EC270004AB296 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75D5F3CF191EC270004AB296 /* BTCWallet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTCWallet-Prefix.pch"; sourceTree = "<group>"; };
+		75D5F3D0191EC270004AB296 /* BTCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTCAppDelegate.h; sourceTree = "<group>"; };
+		75D5F3D1191EC270004AB296 /* BTCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTCAppDelegate.m; sourceTree = "<group>"; };
+		75DE02411B0EB79A0027FF08 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		75DE02451B0EB7BD0027FF08 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		75DE02491B0EB7C80027FF08 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		75DE024D1B0EB7FC0027FF08 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		75DE02511B0EB8030027FF08 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		75E83CF51B5F997A0038FB70 /* coinflip.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = coinflip.aiff; sourceTree = "<group>"; };
+		75F2E0B61BE2D5F000EAE861 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		75F2E0B81BE5596200EAE861 /* secp256k1_ecdh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_ecdh.h; sourceTree = "<group>"; };
+		75F2E0B91BE5596200EAE861 /* secp256k1_recovery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_recovery.h; sourceTree = "<group>"; };
+		75F2E0BA1BE5596200EAE861 /* secp256k1_schnorr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_schnorr.h; sourceTree = "<group>"; };
+		75F2E0BB1BE5599100EAE861 /* basic-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "basic-config.h"; sourceTree = "<group>"; };
+		75F2E0BC1BE559AE00EAE861 /* ecmult_const_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecmult_const_impl.h; sourceTree = "<group>"; };
+		75F2E0BD1BE559AE00EAE861 /* ecmult_const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecmult_const.h; sourceTree = "<group>"; };
+		75F2E0C01BE559F200EAE861 /* main_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_impl.h; sourceTree = "<group>"; };
+		75F2E0C41BE559F200EAE861 /* main_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_impl.h; sourceTree = "<group>"; };
+		75F2E0D21BE9803900EAE861 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		75F2E0D41BEAA6A400EAE861 /* BTCTxMetadataEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCTxMetadataEntity.h; sourceTree = "<group>"; };
+		75F2E0D51BEAA6A400EAE861 /* BTCTxMetadataEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCTxMetadataEntity.m; sourceTree = "<group>"; };
+		8402AE311D65BAD30013CCEF /* BTCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCMainViewController.h; sourceTree = "<group>"; };
+		8402AE321D65BAD30013CCEF /* BTCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCMainViewController.m; sourceTree = "<group>"; };
+		8402AE331D65BAD30013CCEF /* BTCMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCMainViewController.xib; sourceTree = "<group>"; };
+		8402AE361D65BCDB0013CCEF /* BTCReceiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCReceiveViewController.h; sourceTree = "<group>"; };
+		8402AE371D65BCDB0013CCEF /* BTCReceiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCReceiveViewController.m; sourceTree = "<group>"; };
+		8402AE381D65BCDB0013CCEF /* BTCReceiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCReceiveViewController.xib; sourceTree = "<group>"; };
+		840531A41D6C330400ED307A /* BTCAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCAboutViewController.h; sourceTree = "<group>"; };
+		840531A51D6C330400ED307A /* BTCAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCAboutViewController.m; sourceTree = "<group>"; };
+		840531A61D6C330400ED307A /* BTCAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCAboutViewController.xib; sourceTree = "<group>"; };
+		840B3CCE1D6DEAE50021328C /* BTCAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCAnimation.h; sourceTree = "<group>"; };
+		840B3CCF1D6DEAE50021328C /* BTCAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCAnimation.m; sourceTree = "<group>"; };
+		840E46091D7861490094E8DA /* BTCUnitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCUnitCell.xib; sourceTree = "<group>"; };
+		841E6F751D70437C00611974 /* BTCProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCProgressView.h; sourceTree = "<group>"; };
+		841E6F761D70437C00611974 /* BTCProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCProgressView.m; sourceTree = "<group>"; };
+		842B0A7B1D74152A0090DC4C /* BTCPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCPasswordViewController.h; sourceTree = "<group>"; };
+		842B0A7C1D74152A0090DC4C /* BTCPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCPasswordViewController.m; sourceTree = "<group>"; };
+		842B0A7D1D74152A0090DC4C /* BTCPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCPasswordViewController.xib; sourceTree = "<group>"; };
+		842D98FA1D7D63E800DECAFA /* BTCFeeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCFeeCell.xib; sourceTree = "<group>"; };
+		842F0A6F1D758FB0003F49E1 /* BTCPasswordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCPasswordButton.h; sourceTree = "<group>"; };
+		842F0A701D758FB0003F49E1 /* BTCPasswordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCPasswordButton.m; sourceTree = "<group>"; };
+		843348591D62EB810033FEF6 /* BTCRestoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCRestoreViewController.h; sourceTree = "<group>"; };
+		8433485A1D62EB810033FEF6 /* BTCRestoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCRestoreViewController.m; sourceTree = "<group>"; };
+		8433485B1D62EB810033FEF6 /* BTCRestoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCRestoreViewController.xib; sourceTree = "<group>"; };
+		8433485E1D62FB190033FEF6 /* BTCStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCStartViewController.h; sourceTree = "<group>"; };
+		8433485F1D62FB190033FEF6 /* BTCStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCStartViewController.m; sourceTree = "<group>"; };
+		843348601D62FB190033FEF6 /* BTCStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCStartViewController.xib; sourceTree = "<group>"; };
+		843348631D6304F30033FEF6 /* BTCKeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCKeyViewController.h; sourceTree = "<group>"; };
+		843348641D6304F30033FEF6 /* BTCKeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCKeyViewController.m; sourceTree = "<group>"; };
+		843348651D6304F30033FEF6 /* BTCKeyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCKeyViewController.xib; sourceTree = "<group>"; };
+		843348681D63117D0033FEF6 /* BTCSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCSendViewController.h; sourceTree = "<group>"; };
+		843348691D63117D0033FEF6 /* BTCSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCSendViewController.m; sourceTree = "<group>"; };
+		8433486A1D63117D0033FEF6 /* BTCSendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCSendViewController.xib; sourceTree = "<group>"; };
+		843348701D6315000033FEF6 /* BTCNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCNumberViewController.h; sourceTree = "<group>"; };
+		843348711D6315000033FEF6 /* BTCNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCNumberViewController.m; sourceTree = "<group>"; };
+		843348721D6315000033FEF6 /* BTCNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCNumberViewController.xib; sourceTree = "<group>"; };
+		843348751D6361760033FEF6 /* BTCCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCCameraViewController.h; sourceTree = "<group>"; };
+		843348761D6361760033FEF6 /* BTCCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCCameraViewController.m; sourceTree = "<group>"; };
+		843348771D6361760033FEF6 /* BTCCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCCameraViewController.xib; sourceTree = "<group>"; };
+		845A37EE1D9BCCF800B94DF5 /* BTCTextViewLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCTextViewLocalizable.h; sourceTree = "<group>"; };
+		845A37EF1D9BCCF800B94DF5 /* BTCTextViewLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCTextViewLocalizable.m; sourceTree = "<group>"; };
+		845A37F11D9BCD0D00B94DF5 /* BTCLabelLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCLabelLocalizable.h; sourceTree = "<group>"; };
+		845A37F21D9BCD0D00B94DF5 /* BTCLabelLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCLabelLocalizable.m; sourceTree = "<group>"; };
+		846227F11D6AE49D00D1DDE7 /* BTCTrzDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCTrzDetailViewController.h; sourceTree = "<group>"; };
+		846227F21D6AE49D00D1DDE7 /* BTCTrzDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCTrzDetailViewController.m; sourceTree = "<group>"; };
+		846227F31D6AE49D00D1DDE7 /* BTCTrzDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCTrzDetailViewController.xib; sourceTree = "<group>"; };
+		846227F61D6AE9A800D1DDE7 /* BTCIdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCIdCell.xib; sourceTree = "<group>"; };
+		846227F81D6AE9E600D1DDE7 /* BTCTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCTitleCell.xib; sourceTree = "<group>"; };
+		846227FA1D6AEA3D00D1DDE7 /* BTCTrzMinCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCTrzMinCell.xib; sourceTree = "<group>"; };
+		846227FC1D6AEAA700D1DDE7 /* BTCDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCDetailCell.xib; sourceTree = "<group>"; };
+		846227FE1D6AEAED00D1DDE7 /* BTCSubtitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCSubtitleCell.xib; sourceTree = "<group>"; };
+		846228001D6AF89700D1DDE7 /* BTCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCSettingsViewController.h; sourceTree = "<group>"; };
+		846228011D6AF89700D1DDE7 /* BTCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCSettingsViewController.m; sourceTree = "<group>"; };
+		846228021D6AF89700D1DDE7 /* BTCSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCSettingsViewController.xib; sourceTree = "<group>"; };
+		846228051D6B2E5400D1DDE7 /* BTCCurrencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCCurrencyViewController.h; sourceTree = "<group>"; };
+		846228061D6B2E5400D1DDE7 /* BTCCurrencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCCurrencyViewController.m; sourceTree = "<group>"; };
+		846228071D6B2E5400D1DDE7 /* BTCCurrencyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCCurrencyViewController.xib; sourceTree = "<group>"; };
+		84FCC37F1D6734F2006B0860 /* BTCNoTranzactionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCNoTranzactionCell.xib; sourceTree = "<group>"; };
+		84FCC3811D673719006B0860 /* BTCTranzactionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCTranzactionCell.xib; sourceTree = "<group>"; };
+		84FCC3831D673942006B0860 /* BTCActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCActionCell.xib; sourceTree = "<group>"; };
+		84FCC3851D673981006B0860 /* BTCDislocureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCDislocureCell.xib; sourceTree = "<group>"; };
+		84FCC3871D674504006B0860 /* BTCSelectorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCSelectorCell.xib; sourceTree = "<group>"; };
+		84FCC3891D674562006B0860 /* BTCRestoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCRestoreCell.xib; sourceTree = "<group>"; };
+		84FCC38B1D6745D3006B0860 /* BTCSelectorOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCSelectorOptionCell.xib; sourceTree = "<group>"; };
+		84FCC38D1D67460E006B0860 /* BTCSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCSwitchCell.xib; sourceTree = "<group>"; };
+		84FD13CB1D8BD80E000EA4F9 /* Design.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Design.xcassets; sourceTree = "<group>"; };
+		84FD13CD1D8BE05C000EA4F9 /* BTCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCButton.h; sourceTree = "<group>"; };
+		84FD13CE1D8BE05C000EA4F9 /* BTCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCButton.m; sourceTree = "<group>"; };
+		9C2C2A5F1DA395330059F423 /* about_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_icon.png; sourceTree = "<group>"; };
+		9C2C2A601DA395330059F423 /* about_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about_icon@2x.png"; sourceTree = "<group>"; };
+		9C2C2A611DA395330059F423 /* about_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about_icon@3x.png"; sourceTree = "<group>"; };
+		9C2C2A681DA395330059F423 /* settings_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_icon.png; sourceTree = "<group>"; };
+		9C2C2A691DA395330059F423 /* settings_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_icon@2x.png"; sourceTree = "<group>"; };
+		9C2C2A6A1DA395330059F423 /* settings_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_icon@3x.png"; sourceTree = "<group>"; };
+		9C2C2A6B1DA395330059F423 /* wallet_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet_icon.png; sourceTree = "<group>"; };
+		9C2C2A6C1DA395330059F423 /* wallet_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallet_icon@2x.png"; sourceTree = "<group>"; };
+		9C2C2A6D1DA395330059F423 /* wallet_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallet_icon@3x.png"; sourceTree = "<group>"; };
+		9C2C2A7D1DA3968B0059F423 /* receive_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = receive_icon.png; sourceTree = "<group>"; };
+		9C2C2A7E1DA3968B0059F423 /* receive_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "receive_icon@2x.png"; sourceTree = "<group>"; };
+		9C2C2A7F1DA3968B0059F423 /* receive_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "receive_icon@3x.png"; sourceTree = "<group>"; };
+		9C2C2A831DA398A30059F423 /* send_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send_icon.png; sourceTree = "<group>"; };
+		9C2C2A841DA398A30059F423 /* send_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send_icon@2x.png"; sourceTree = "<group>"; };
+		9C2C2A851DA398A30059F423 /* send_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send_icon@3x.png"; sourceTree = "<group>"; };
+		9C717B9F1D9E6EDD00AF0FCB /* BTCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCMenuViewController.h; sourceTree = "<group>"; };
+		9C717BA01D9E6EDD00AF0FCB /* BTCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCMenuViewController.m; sourceTree = "<group>"; };
+		9C717BA11D9E6EDD00AF0FCB /* BTCMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCMenuViewController.xib; sourceTree = "<group>"; };
+		9C717BA41D9E88FC00AF0FCB /* BTCSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCSideMenuViewController.h; sourceTree = "<group>"; };
+		9C717BA51D9E88FC00AF0FCB /* BTCSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCSideMenuViewController.m; sourceTree = "<group>"; };
+		9C717BA61D9E88FC00AF0FCB /* BTCSideMenuOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCSideMenuOptions.h; sourceTree = "<group>"; };
+		9C717BA71D9E88FC00AF0FCB /* BTCSideMenuOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCSideMenuOptions.m; sourceTree = "<group>"; };
+		9C717BAA1D9EA2BE00AF0FCB /* menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon@2x.png"; sourceTree = "<group>"; };
+		BA4A72661BE11AFA00E39C01 /* BTCAWWeakTimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCAWWeakTimerTarget.swift; sourceTree = "<group>"; };
+		BA4EECDF1B351AE200D443A3 /* BTCAppGroupConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCAppGroupConstants.h; sourceTree = "<group>"; };
+		BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		BA6645951BD924EB007A6BB1 /* BTCAWTransactionRowControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCAWTransactionRowControl.swift; sourceTree = "<group>"; };
+		BA7B534E1BDA9A2800355E8D /* BTCAppleWatchData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCAppleWatchData.h; sourceTree = "<group>"; };
+		BA7B534F1BDA9A2800355E8D /* BTCAppleWatchData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCAppleWatchData.m; sourceTree = "<group>"; };
+		BA7B53521BDAA0A800355E8D /* BTCAppleWatchTransactionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCAppleWatchTransactionData.h; sourceTree = "<group>"; };
+		BA7B53531BDAA0A800355E8D /* BTCAppleWatchTransactionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCAppleWatchTransactionData.m; sourceTree = "<group>"; };
+		BA7B535A1BDBC36700355E8D /* BTCTransaction+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BTCTransaction+Utils.h"; sourceTree = "<group>"; };
+		BA7B535B1BDBC36700355E8D /* BTCTransaction+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BTCTransaction+Utils.m"; sourceTree = "<group>"; };
+		BA7B53651BDBD04F00355E8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		BA7B53671BDBD07F00355E8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BA7B53691BDBD08A00355E8D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		BA7B53741BDBDB0500355E8D /* BTCAWWatchDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCAWWatchDataManager.swift; sourceTree = "<group>"; };
+		BA7B537A1BDD1DCF00355E8D /* LoadingIndicator.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoadingIndicator.xcassets; sourceTree = "<group>"; };
+		BA913BDE1BD57E4D005A7C0E /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA913BE11BD57E4D005A7C0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BA913BE31BD57E4D005A7C0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA913BE51BD57E4D005A7C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA913BEA1BD57E4D005A7C0E /* WatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA913BF11BD57E4D005A7C0E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BA913BF71BD57E4D005A7C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA0E8C91BD9273700DF4236 /* BTCAWGlanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCAWGlanceInterfaceController.swift; sourceTree = "<group>"; };
+		BAA4843A1B3EFFAF0075C749 /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
+		BAA4843B1B3EFFAF0075C749 /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
+		BAA6E3EA1BD5C78500773205 /* BTCAWRootInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCAWRootInterfaceController.swift; sourceTree = "<group>"; };
+		BAA6E3EE1BD5CA0E00773205 /* BTCAWBalanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCAWBalanceInterfaceController.swift; sourceTree = "<group>"; };
+		BAA6E3F01BD5CA5900773205 /* BTCAWReceiveMoneyInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCAWReceiveMoneyInterfaceController.swift; sourceTree = "<group>"; };
+		BAC7B6BC1BD9C29900165B84 /* BTCPhoneWCSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCPhoneWCSessionManager.h; sourceTree = "<group>"; };
+		BAC7B6BD1BD9C29900165B84 /* BTCPhoneWCSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCPhoneWCSessionManager.m; sourceTree = "<group>"; };
+		BAC7B6C41BD9C9B600165B84 /* WatchApp Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchApp Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		BAC7B6C81BD9CA8400165B84 /* BTCAppleWatchSharedConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCAppleWatchSharedConstants.h; sourceTree = "<group>"; };
+		BAE12BE51B2DEE7F00895CC5 /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE12BE61B2DEE7F00895CC5 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		BAE12BEA1B2DEE7F00895CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE12C041B2DEEF700895CC5 /* BTCTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCTodayViewController.h; sourceTree = "<group>"; };
+		BAE12C051B2DEEF700895CC5 /* BTCTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCTodayViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75D5F3BB191EC270004AB296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225383011C694D7400968BEE /* CoreLocation.framework in Frameworks */,
+				2E8351D81DA53FD600937D26 /* libFlurry_7.6.6.a in Frameworks */,
+				22D3613D1C56F2CD0057CF76 /* libsqlite3.tbd in Frameworks */,
+				222E7F581C46E9BE009AB45D /* SystemConfiguration.framework in Frameworks */,
+				222E7F561C46E9B8009AB45D /* Security.framework in Frameworks */,
+				222040C61C1A1940005CE1C3 /* WebKit.framework in Frameworks */,
+				22B6A4481C0E963900673913 /* libbz2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA913BE71BD57E4D005A7C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE12BE21B2DEE7F00895CC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754119E01CDA93FF0042DC51 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E8351D51DA53FD600937D26 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				2E8351D61DA53FD600937D26 /* Flurry.h */,
+				2E8351D71DA53FD600937D26 /* libFlurry_7.6.6.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
+		752E289B19234A3F00DB5A3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				759816E519357D6F005060EA /* BTCBubbleView.h */,
+				759816E619357D6F005060EA /* BTCBubbleView.m */,
+				75AA5F53194143D5003F23BD /* BTCBouncyBurgerButton.h */,
+				75AA5F54194143D5003F23BD /* BTCBouncyBurgerButton.m */,
+				7548CF3519556FD700EF827F /* BTCCopyLabel.h */,
+				7548CF3619556FD700EF827F /* BTCCopyLabel.m */,
+				22F45A0C1C3326CC00B07A15 /* BTCUserDefaultsSwitchCell.h */,
+				22F45A0D1C3326CC00B07A15 /* BTCUserDefaultsSwitchCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		752E289C19234A4700DB5A3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				752E289D19234A4E00DB5A3C /* Entities */,
+				752E28B619234C3600DB5A3C /* BTCKey.h */,
+				752E28B719234C3600DB5A3C /* BTCKey.m */,
+				752E28B819234C3600DB5A3C /* BTCKey+BIP38.h */,
+				752E28B919234C3600DB5A3C /* BTCKey+BIP38.m */,
+				752E28C819234C3600DB5A3C /* BTCTransaction.h */,
+				752E28C919234C3600DB5A3C /* BTCTransaction.m */,
+				752E28BA19234C3600DB5A3C /* BTCKeySequence.h */,
+				752E28DC19234D1000DB5A3C /* BTCBIP32Sequence.h */,
+				752E28B119234C3600DB5A3C /* BTCBIP32Sequence.m */,
+				752E28BD19234C3600DB5A3C /* BTCMnemonic.h */,
+				752E28B219234C3600DB5A3C /* BTCBIP39Mnemonic.h */,
+				752E28B319234C3600DB5A3C /* BTCBIP39Mnemonic.m */,
+				752E28CA19234C3600DB5A3C /* BTCWallet.h */,
+				752E28CB19234C3600DB5A3C /* BTCWallet.m */,
+				752E28CC19234C3600DB5A3C /* BTCWalletManager.h */,
+				752E28CD19234C3600DB5A3C /* BTCWalletManager.m */,
+				752E28BB19234C3600DB5A3C /* BTCMerkleBlock.h */,
+				752E28BC19234C3600DB5A3C /* BTCMerkleBlock.m */,
+				752E28B419234C3600DB5A3C /* BTCBloomFilter.h */,
+				752E28B519234C3600DB5A3C /* BTCBloomFilter.m */,
+				752E28C219234C3600DB5A3C /* BTCPeer.h */,
+				752E28C319234C3600DB5A3C /* BTCPeer.m */,
+				752E28C619234C3600DB5A3C /* BTCPeerManager.h */,
+				752E28C719234C3600DB5A3C /* BTCPeerManager.m */,
+				752E28BE19234C3600DB5A3C /* BTCPaymentProtocol.h */,
+				752E28BF19234C3600DB5A3C /* BTCPaymentProtocol.m */,
+				752E28C019234C3600DB5A3C /* BTCPaymentRequest.h */,
+				752E28C119234C3600DB5A3C /* BTCPaymentRequest.m */,
+				22DE8CF01D02407F007F07F3 /* BTCWalletConstants.m */,
+				22FF2C361BED381400B36384 /* btcwallet-Bridging-Header.h */,
+				220128D11C753C670001CAC1 /* BTCSocketHelpers.c */,
+				220128D21C753C670001CAC1 /* BTCSocketHelpers.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		752E289D19234A4E00DB5A3C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				752E289E19234AE300DB5A3C /* BTCAddressEntity.h */,
+				752E289F19234AE300DB5A3C /* BTCAddressEntity.m */,
+				752E28A019234AE300DB5A3C /* BTCMerkleBlockEntity.h */,
+				752E28A119234AE300DB5A3C /* BTCMerkleBlockEntity.m */,
+				752E28A219234AE300DB5A3C /* BTCPeerEntity.h */,
+				752E28A319234AE300DB5A3C /* BTCPeerEntity.m */,
+				752E28A419234AE300DB5A3C /* BTCTransactionEntity.h */,
+				752E28A519234AE300DB5A3C /* BTCTransactionEntity.m */,
+				752E28A619234AE300DB5A3C /* BTCTxInputEntity.h */,
+				752E28A719234AE300DB5A3C /* BTCTxInputEntity.m */,
+				752E28A819234AE300DB5A3C /* BTCTxOutputEntity.h */,
+				752E28A919234AE300DB5A3C /* BTCTxOutputEntity.m */,
+				75F2E0D41BEAA6A400EAE861 /* BTCTxMetadataEntity.h */,
+				75F2E0D51BEAA6A400EAE861 /* BTCTxMetadataEntity.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		752E28B019234B0500DB5A3C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				752E28E519234DA200DB5A3C /* NSString+Bitcoin.h */,
+				752E28E619234DA200DB5A3C /* NSString+Bitcoin.m */,
+				752E28DD19234DA200DB5A3C /* NSData+Bitcoin.h */,
+				752E28DE19234DA200DB5A3C /* NSData+Bitcoin.m */,
+				752E28E319234DA200DB5A3C /* NSMutableData+Bitcoin.h */,
+				752E28E419234DA200DB5A3C /* NSMutableData+Bitcoin.m */,
+				752E28E119234DA200DB5A3C /* NSManagedObject+Sugar.h */,
+				752E28E219234DA200DB5A3C /* NSManagedObject+Sugar.m */,
+				BAA4843A1B3EFFAF0075C749 /* UIImage+Utils.h */,
+				BAA4843B1B3EFFAF0075C749 /* UIImage+Utils.m */,
+				BA7B535A1BDBC36700355E8D /* BTCTransaction+Utils.h */,
+				BA7B535B1BDBC36700355E8D /* BTCTransaction+Utils.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		754119E11CDA97820042DC51 /* schnorr */ = {
+			isa = PBXGroup;
+			children = (
+				754119E21CDA97820042DC51 /* main_impl.h */,
+				754119E41CDA97820042DC51 /* schnorr.h */,
+				754119E51CDA97820042DC51 /* schnorr_impl.h */,
+			);
+			path = schnorr;
+			sourceTree = "<group>";
+		};
+		7579F7FE19231D4600CA56F4 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				752E28EF19234E8100DB5A3C /* Reachability.h */,
+				752E28F019234E8100DB5A3C /* Reachability.m */,
+				758B161A1AA9ADC4002C65DD /* secp256k1 */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		758B161A1AA9ADC4002C65DD /* secp256k1 */ = {
+			isa = PBXGroup;
+			children = (
+				758B16231AA9ADC4002C65DD /* include */,
+				758B162A1AA9ADC4002C65DD /* src */,
+			);
+			path = secp256k1;
+			sourceTree = SOURCE_ROOT;
+		};
+		758B16231AA9ADC4002C65DD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				758B16241AA9ADC4002C65DD /* secp256k1.h */,
+				75F2E0B81BE5596200EAE861 /* secp256k1_ecdh.h */,
+				75F2E0B91BE5596200EAE861 /* secp256k1_recovery.h */,
+				75F2E0BA1BE5596200EAE861 /* secp256k1_schnorr.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		758B162A1AA9ADC4002C65DD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				75F2E0BB1BE5599100EAE861 /* basic-config.h */,
+				758B16301AA9ADC4002C65DD /* ecdsa.h */,
+				758B16311AA9ADC4002C65DD /* ecdsa_impl.h */,
+				758B16321AA9ADC4002C65DD /* eckey.h */,
+				758B16331AA9ADC4002C65DD /* eckey_impl.h */,
+				758B16341AA9ADC4002C65DD /* ecmult.h */,
+				75F2E0BD1BE559AE00EAE861 /* ecmult_const.h */,
+				75F2E0BC1BE559AE00EAE861 /* ecmult_const_impl.h */,
+				758B16351AA9ADC4002C65DD /* ecmult_gen.h */,
+				758B16361AA9ADC4002C65DD /* ecmult_gen_impl.h */,
+				758B16371AA9ADC4002C65DD /* ecmult_impl.h */,
+				758B16381AA9ADC4002C65DD /* field.h */,
+				758B16391AA9ADC4002C65DD /* field_10x26.h */,
+				758B163A1AA9ADC4002C65DD /* field_10x26_impl.h */,
+				758B163F1AA9ADC4002C65DD /* field_impl.h */,
+				758B16401AA9ADC4002C65DD /* group.h */,
+				758B16411AA9ADC4002C65DD /* group_impl.h */,
+				758B16421AA9ADC4002C65DD /* hash.h */,
+				758B16431AA9ADC4002C65DD /* hash_impl.h */,
+				75F2E0BE1BE559F200EAE861 /* modules */,
+				758B164A1AA9ADC4002C65DD /* num.h */,
+				758B164D1AA9ADC4002C65DD /* num_impl.h */,
+				758B164E1AA9ADC4002C65DD /* scalar.h */,
+				758B16511AA9ADC4002C65DD /* scalar_8x32.h */,
+				758B16521AA9ADC4002C65DD /* scalar_8x32_impl.h */,
+				758B16531AA9ADC4002C65DD /* scalar_impl.h */,
+				758B16541AA9ADC4002C65DD /* secp256k1.c */,
+				758B16581AA9ADC4002C65DD /* util.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		75D5F3B5191EC270004AB296 = {
+			isa = PBXGroup;
+			children = (
+				75D5F3C7191EC270004AB296 /* BTCWallet */,
+				BAE12BE81B2DEE7F00895CC5 /* TodayExtension */,
+				BA913BDF1BD57E4D005A7C0E /* WatchApp */,
+				BA913BEE1BD57E4D005A7C0E /* WatchApp Extension */,
+				75D5F3C0191EC270004AB296 /* Frameworks */,
+				75D5F3BF191EC270004AB296 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75D5F3BF191EC270004AB296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75D5F3BE191EC270004AB296 /* btcwallet.app */,
+				BAE12BE51B2DEE7F00895CC5 /* TodayExtension.appex */,
+				BA913BDE1BD57E4D005A7C0E /* WatchApp.app */,
+				BA913BEA1BD57E4D005A7C0E /* WatchApp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75D5F3C0191EC270004AB296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22DC3A221D2C8DD100A72EA5 /* PushKit.framework */,
+				225383001C694D7400968BEE /* CoreLocation.framework */,
+				22D3613C1C56F2CD0057CF76 /* libsqlite3.tbd */,
+				222E7F571C46E9BE009AB45D /* SystemConfiguration.framework */,
+				222E7F551C46E9B8009AB45D /* Security.framework */,
+				222040C51C1A1940005CE1C3 /* WebKit.framework */,
+				22B6A4471C0E963900673913 /* libbz2.tbd */,
+				75F2E0B61BE2D5F000EAE861 /* Accelerate.framework */,
+				BA7B53691BDBD08A00355E8D /* ImageIO.framework */,
+				BA7B53671BDBD07F00355E8D /* UIKit.framework */,
+				BA7B53651BDBD04F00355E8D /* CoreGraphics.framework */,
+				BAE12BE61B2DEE7F00895CC5 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75D5F3C7191EC270004AB296 /* BTCWallet */ = {
+			isa = PBXGroup;
+			children = (
+				2E8351D51DA53FD600937D26 /* Flurry */,
+				9C2C2A541DA391810059F423 /* images */,
+				BAC7B6BF1BD9C2B500165B84 /* AppleWatch */,
+				752E289C19234A4700DB5A3C /* Models */,
+				752E289B19234A3F00DB5A3C /* Views */,
+				752E28B019234B0500DB5A3C /* Categories */,
+				75D5F3D0191EC270004AB296 /* BTCAppDelegate.h */,
+				75D5F3D1191EC270004AB296 /* BTCAppDelegate.m */,
+				BA4EECDF1B351AE200D443A3 /* BTCAppGroupConstants.h */,
+				22F45A0F1C3329EB00B07A15 /* BTCUserDefaultsConstants.h */,
+				28BABAE21D911FA8008A1BB8 /* BTCWallet.xcdatamodeld */,
+				75F2E0D21BE9803900EAE861 /* Launch Screen.storyboard */,
+				75C0E3C11B1BA294007BC531 /* BIP39Words.plist */,
+				752E28F519235B3000DB5A3C /* FixedPeers.plist */,
+				75E83CF51B5F997A0038FB70 /* coinflip.aiff */,
+				75CE50BD1B525D1B00DBC18C /* btcwallet.entitlements */,
+				9C717BAA1D9EA2BE00AF0FCB /* menu_icon@2x.png */,
+				843348581D62EAEB0033FEF6 /* NewClasses */,
+				7579F7FE19231D4600CA56F4 /* ThirdParty */,
+				75D5F3C8191EC270004AB296 /* Supporting Files */,
+			);
+			path = BTCWallet;
+			sourceTree = "<group>";
+		};
+		75D5F3C8191EC270004AB296 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D5F3C9191EC270004AB296 /* Info.plist */,
+				757E09971ADB8EEB006FD352 /* Localizable.strings */,
+				75D5F3CD191EC270004AB296 /* main.m */,
+				75D5F3CF191EC270004AB296 /* BTCWallet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75F2E0BE1BE559F200EAE861 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				75F2E0BF1BE559F200EAE861 /* ecdh */,
+				75F2E0C31BE559F200EAE861 /* recovery */,
+				754119E11CDA97820042DC51 /* schnorr */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		75F2E0BF1BE559F200EAE861 /* ecdh */ = {
+			isa = PBXGroup;
+			children = (
+				75F2E0C01BE559F200EAE861 /* main_impl.h */,
+			);
+			path = ecdh;
+			sourceTree = "<group>";
+		};
+		75F2E0C31BE559F200EAE861 /* recovery */ = {
+			isa = PBXGroup;
+			children = (
+				75F2E0C41BE559F200EAE861 /* main_impl.h */,
+			);
+			path = recovery;
+			sourceTree = "<group>";
+		};
+		843348581D62EAEB0033FEF6 /* NewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				9C717B951D9E6C7700AF0FCB /* SideMenuClasses */,
+				84FCC38F1D67467E006B0860 /* Cells */,
+				8402AE311D65BAD30013CCEF /* BTCMainViewController.h */,
+				8402AE321D65BAD30013CCEF /* BTCMainViewController.m */,
+				8402AE331D65BAD30013CCEF /* BTCMainViewController.xib */,
+				840531A41D6C330400ED307A /* BTCAboutViewController.h */,
+				840531A51D6C330400ED307A /* BTCAboutViewController.m */,
+				840531A61D6C330400ED307A /* BTCAboutViewController.xib */,
+				846228051D6B2E5400D1DDE7 /* BTCCurrencyViewController.h */,
+				846228061D6B2E5400D1DDE7 /* BTCCurrencyViewController.m */,
+				846228071D6B2E5400D1DDE7 /* BTCCurrencyViewController.xib */,
+				846228001D6AF89700D1DDE7 /* BTCSettingsViewController.h */,
+				846228011D6AF89700D1DDE7 /* BTCSettingsViewController.m */,
+				846228021D6AF89700D1DDE7 /* BTCSettingsViewController.xib */,
+				846227F11D6AE49D00D1DDE7 /* BTCTrzDetailViewController.h */,
+				846227F21D6AE49D00D1DDE7 /* BTCTrzDetailViewController.m */,
+				846227F31D6AE49D00D1DDE7 /* BTCTrzDetailViewController.xib */,
+				8402AE361D65BCDB0013CCEF /* BTCReceiveViewController.h */,
+				8402AE371D65BCDB0013CCEF /* BTCReceiveViewController.m */,
+				8402AE381D65BCDB0013CCEF /* BTCReceiveViewController.xib */,
+				843348751D6361760033FEF6 /* BTCCameraViewController.h */,
+				843348761D6361760033FEF6 /* BTCCameraViewController.m */,
+				843348771D6361760033FEF6 /* BTCCameraViewController.xib */,
+				843348701D6315000033FEF6 /* BTCNumberViewController.h */,
+				843348711D6315000033FEF6 /* BTCNumberViewController.m */,
+				843348721D6315000033FEF6 /* BTCNumberViewController.xib */,
+				843348681D63117D0033FEF6 /* BTCSendViewController.h */,
+				843348691D63117D0033FEF6 /* BTCSendViewController.m */,
+				8433486A1D63117D0033FEF6 /* BTCSendViewController.xib */,
+				843348631D6304F30033FEF6 /* BTCKeyViewController.h */,
+				843348641D6304F30033FEF6 /* BTCKeyViewController.m */,
+				843348651D6304F30033FEF6 /* BTCKeyViewController.xib */,
+				8433485E1D62FB190033FEF6 /* BTCStartViewController.h */,
+				8433485F1D62FB190033FEF6 /* BTCStartViewController.m */,
+				843348601D62FB190033FEF6 /* BTCStartViewController.xib */,
+				843348591D62EB810033FEF6 /* BTCRestoreViewController.h */,
+				8433485A1D62EB810033FEF6 /* BTCRestoreViewController.m */,
+				8433485B1D62EB810033FEF6 /* BTCRestoreViewController.xib */,
+				842B0A7B1D74152A0090DC4C /* BTCPasswordViewController.h */,
+				842B0A7C1D74152A0090DC4C /* BTCPasswordViewController.m */,
+				842B0A7D1D74152A0090DC4C /* BTCPasswordViewController.xib */,
+				9C717B9F1D9E6EDD00AF0FCB /* BTCMenuViewController.h */,
+				9C717BA01D9E6EDD00AF0FCB /* BTCMenuViewController.m */,
+				9C717BA11D9E6EDD00AF0FCB /* BTCMenuViewController.xib */,
+				842F0A6F1D758FB0003F49E1 /* BTCPasswordButton.h */,
+				842F0A701D758FB0003F49E1 /* BTCPasswordButton.m */,
+				840B3CCE1D6DEAE50021328C /* BTCAnimation.h */,
+				840B3CCF1D6DEAE50021328C /* BTCAnimation.m */,
+				841E6F751D70437C00611974 /* BTCProgressView.h */,
+				841E6F761D70437C00611974 /* BTCProgressView.m */,
+				84FD13CD1D8BE05C000EA4F9 /* BTCButton.h */,
+				84FD13CE1D8BE05C000EA4F9 /* BTCButton.m */,
+				845A37EE1D9BCCF800B94DF5 /* BTCTextViewLocalizable.h */,
+				845A37EF1D9BCCF800B94DF5 /* BTCTextViewLocalizable.m */,
+				845A37F11D9BCD0D00B94DF5 /* BTCLabelLocalizable.h */,
+				845A37F21D9BCD0D00B94DF5 /* BTCLabelLocalizable.m */,
+				84FD13CB1D8BD80E000EA4F9 /* Design.xcassets */,
+			);
+			path = NewClasses;
+			sourceTree = "<group>";
+		};
+		84FCC38F1D67467E006B0860 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				846227F61D6AE9A800D1DDE7 /* BTCIdCell.xib */,
+				846227FE1D6AEAED00D1DDE7 /* BTCSubtitleCell.xib */,
+				846227FC1D6AEAA700D1DDE7 /* BTCDetailCell.xib */,
+				846227F81D6AE9E600D1DDE7 /* BTCTitleCell.xib */,
+				846227FA1D6AEA3D00D1DDE7 /* BTCTrzMinCell.xib */,
+				84FCC3891D674562006B0860 /* BTCRestoreCell.xib */,
+				84FCC38D1D67460E006B0860 /* BTCSwitchCell.xib */,
+				84FCC38B1D6745D3006B0860 /* BTCSelectorOptionCell.xib */,
+				84FCC3871D674504006B0860 /* BTCSelectorCell.xib */,
+				84FCC37F1D6734F2006B0860 /* BTCNoTranzactionCell.xib */,
+				84FCC3851D673981006B0860 /* BTCDislocureCell.xib */,
+				84FCC3831D673942006B0860 /* BTCActionCell.xib */,
+				840E46091D7861490094E8DA /* BTCUnitCell.xib */,
+				842D98FA1D7D63E800DECAFA /* BTCFeeCell.xib */,
+				84FCC3811D673719006B0860 /* BTCTranzactionCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		9C2C2A541DA391810059F423 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9C2C2A5F1DA395330059F423 /* about_icon.png */,
+				9C2C2A601DA395330059F423 /* about_icon@2x.png */,
+				9C2C2A611DA395330059F423 /* about_icon@3x.png */,
+				9C2C2A7D1DA3968B0059F423 /* receive_icon.png */,
+				9C2C2A7E1DA3968B0059F423 /* receive_icon@2x.png */,
+				9C2C2A7F1DA3968B0059F423 /* receive_icon@3x.png */,
+				9C2C2A831DA398A30059F423 /* send_icon.png */,
+				9C2C2A841DA398A30059F423 /* send_icon@2x.png */,
+				9C2C2A851DA398A30059F423 /* send_icon@3x.png */,
+				9C2C2A681DA395330059F423 /* settings_icon.png */,
+				9C2C2A691DA395330059F423 /* settings_icon@2x.png */,
+				9C2C2A6A1DA395330059F423 /* settings_icon@3x.png */,
+				9C2C2A6B1DA395330059F423 /* wallet_icon.png */,
+				9C2C2A6C1DA395330059F423 /* wallet_icon@2x.png */,
+				9C2C2A6D1DA395330059F423 /* wallet_icon@3x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		9C717B951D9E6C7700AF0FCB /* SideMenuClasses */ = {
+			isa = PBXGroup;
+			children = (
+				9C717BA41D9E88FC00AF0FCB /* BTCSideMenuViewController.h */,
+				9C717BA51D9E88FC00AF0FCB /* BTCSideMenuViewController.m */,
+				9C717BA61D9E88FC00AF0FCB /* BTCSideMenuOptions.h */,
+				9C717BA71D9E88FC00AF0FCB /* BTCSideMenuOptions.m */,
+			);
+			name = SideMenuClasses;
+			sourceTree = "<group>";
+		};
+		BA913BDF1BD57E4D005A7C0E /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				BA913BE01BD57E4D005A7C0E /* Interface.storyboard */,
+				BA913BE31BD57E4D005A7C0E /* Assets.xcassets */,
+				BA7B537A1BDD1DCF00355E8D /* LoadingIndicator.xcassets */,
+				BA913BE51BD57E4D005A7C0E /* Info.plist */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		BA913BEE1BD57E4D005A7C0E /* WatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BA913BF11BD57E4D005A7C0E /* ExtensionDelegate.swift */,
+				BAA6E3EA1BD5C78500773205 /* BTCAWRootInterfaceController.swift */,
+				BAA6E3EE1BD5CA0E00773205 /* BTCAWBalanceInterfaceController.swift */,
+				BAA6E3F01BD5CA5900773205 /* BTCAWReceiveMoneyInterfaceController.swift */,
+				BA6645951BD924EB007A6BB1 /* BTCAWTransactionRowControl.swift */,
+				BAA0E8C91BD9273700DF4236 /* BTCAWGlanceInterfaceController.swift */,
+				BA7B53741BDBDB0500355E8D /* BTCAWWatchDataManager.swift */,
+				BA4A72661BE11AFA00E39C01 /* BTCAWWeakTimerTarget.swift */,
+				22F45A0A1C30EAB700B07A15 /* BTCAWKeypad.swift */,
+				BA913BF71BD57E4D005A7C0E /* Info.plist */,
+				BAC7B6C41BD9C9B600165B84 /* WatchApp Extension-Bridging-Header.h */,
+			);
+			path = "WatchApp Extension";
+			sourceTree = "<group>";
+		};
+		BAC7B6BF1BD9C2B500165B84 /* AppleWatch */ = {
+			isa = PBXGroup;
+			children = (
+				BAC7B6C81BD9CA8400165B84 /* BTCAppleWatchSharedConstants.h */,
+				BAC7B6BC1BD9C29900165B84 /* BTCPhoneWCSessionManager.h */,
+				BAC7B6BD1BD9C29900165B84 /* BTCPhoneWCSessionManager.m */,
+				BA7B534E1BDA9A2800355E8D /* BTCAppleWatchData.h */,
+				BA7B534F1BDA9A2800355E8D /* BTCAppleWatchData.m */,
+				BA7B53521BDAA0A800355E8D /* BTCAppleWatchTransactionData.h */,
+				BA7B53531BDAA0A800355E8D /* BTCAppleWatchTransactionData.m */,
+			);
+			name = AppleWatch;
+			sourceTree = "<group>";
+		};
+		BAE12BE81B2DEE7F00895CC5 /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BAE12C041B2DEEF700895CC5 /* BTCTodayViewController.h */,
+				BAE12C051B2DEEF700895CC5 /* BTCTodayViewController.m */,
+				75ABFB681B55BB2300B0B5CC /* MainInterface.storyboard */,
+				BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */,
+				BAE12BEA1B2DEE7F00895CC5 /* Info.plist */,
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		75001D3D1A1EE89500585F55 /* submodules */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-c 'git submodule init && git submodule update'";
+			buildConfigurationList = 75001D3E1A1EE89500585F55 /* Build configuration list for PBXLegacyTarget "submodules" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = submodules;
+			passBuildSettingsInEnvironment = 1;
+			productName = submodules;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		75D5F3BD191EC270004AB296 /* btcwallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75D5F3F6191EC270004AB296 /* Build configuration list for PBXNativeTarget "btcwallet" */;
+			buildPhases = (
+				75D5F3BA191EC270004AB296 /* Sources */,
+				75D5F3BB191EC270004AB296 /* Frameworks */,
+				75D5F3BC191EC270004AB296 /* Resources */,
+				BAE12BF71B2DEE7F00895CC5 /* Embed App Extensions */,
+				BA913C021BD57E4E005A7C0E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				757FC2531ADA30D100A1FDF7 /* PBXTargetDependency */,
+				BAE12BF11B2DEE7F00895CC5 /* PBXTargetDependency */,
+				BA913BF91BD57E4D005A7C0E /* PBXTargetDependency */,
+			);
+			name = btcwallet;
+			productName = BreadWallet;
+			productReference = 75D5F3BE191EC270004AB296 /* btcwallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA913BDD1BD57E4D005A7C0E /* WatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA913C011BD57E4E005A7C0E /* Build configuration list for PBXNativeTarget "WatchApp" */;
+			buildPhases = (
+				BA913BDC1BD57E4D005A7C0E /* Resources */,
+				BA913C001BD57E4E005A7C0E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA913BED1BD57E4D005A7C0E /* PBXTargetDependency */,
+			);
+			name = WatchApp;
+			productName = WatchApp;
+			productReference = BA913BDE1BD57E4D005A7C0E /* WatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BA913BE91BD57E4D005A7C0E /* WatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA913BFF1BD57E4E005A7C0E /* Build configuration list for PBXNativeTarget "WatchApp Extension" */;
+			buildPhases = (
+				BA913BE61BD57E4D005A7C0E /* Sources */,
+				BA913BE71BD57E4D005A7C0E /* Frameworks */,
+				BA913BE81BD57E4D005A7C0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchApp Extension";
+			productName = "WatchApp Extension";
+			productReference = BA913BEA1BD57E4D005A7C0E /* WatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		BAE12BE41B2DEE7F00895CC5 /* TodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE12BF61B2DEE7F00895CC5 /* Build configuration list for PBXNativeTarget "TodayExtension" */;
+			buildPhases = (
+				BAE12BE11B2DEE7F00895CC5 /* Sources */,
+				BAE12BE21B2DEE7F00895CC5 /* Frameworks */,
+				BAE12BE31B2DEE7F00895CC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = BAE12BE51B2DEE7F00895CC5 /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75D5F3B6191EC270004AB296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BTC;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = MyOrg;
+				TargetAttributes = {
+					75001D3D1A1EE89500585F55 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					75D5F3BD191EC270004AB296 = {
+						DevelopmentTeam = JRX3M2AE8B;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+					BA913BDD1BD57E4D005A7C0E = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = JRX3M2AE8B;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					BA913BE91BD57E4D005A7C0E = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = JRX3M2AE8B;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					BAE12BE41B2DEE7F00895CC5 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = JRX3M2AE8B;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 75D5F3B9191EC270004AB296 /* Build configuration list for PBXProject "BTCWallet" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				ja,
+				ko,
+				nb,
+				sq,
+				nl,
+				da,
+				de,
+				hu,
+				"zh-Hans",
+				es,
+				it,
+				sv,
+				tr,
+				pl,
+				ru,
+				el,
+				pt,
+			);
+			mainGroup = 75D5F3B5191EC270004AB296;
+			productRefGroup = 75D5F3BF191EC270004AB296 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75D5F3BD191EC270004AB296 /* btcwallet */,
+				BAE12BE41B2DEE7F00895CC5 /* TodayExtension */,
+				75001D3D1A1EE89500585F55 /* submodules */,
+				BA913BDD1BD57E4D005A7C0E /* WatchApp */,
+				BA913BE91BD57E4D005A7C0E /* WatchApp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75D5F3BC191EC270004AB296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846227F71D6AE9A800D1DDE7 /* BTCIdCell.xib in Resources */,
+				846227F51D6AE49D00D1DDE7 /* BTCTrzDetailViewController.xib in Resources */,
+				843348621D62FB190033FEF6 /* BTCStartViewController.xib in Resources */,
+				9C2C2A6E1DA395330059F423 /* about_icon.png in Resources */,
+				8433486C1D63117D0033FEF6 /* BTCSendViewController.xib in Resources */,
+				84FCC3821D673719006B0860 /* BTCTranzactionCell.xib in Resources */,
+				8402AE3A1D65BCDB0013CCEF /* BTCReceiveViewController.xib in Resources */,
+				843348671D6304F30033FEF6 /* BTCKeyViewController.xib in Resources */,
+				9C717BA31D9E6EDD00AF0FCB /* BTCMenuViewController.xib in Resources */,
+				84FCC3801D6734F2006B0860 /* BTCNoTranzactionCell.xib in Resources */,
+				846227FD1D6AEAA700D1DDE7 /* BTCDetailCell.xib in Resources */,
+				9C2C2A801DA3968B0059F423 /* receive_icon.png in Resources */,
+				84FCC3881D674504006B0860 /* BTCSelectorCell.xib in Resources */,
+				757E09991ADB8EEB006FD352 /* Localizable.strings in Resources */,
+				9C2C2A771DA395330059F423 /* settings_icon.png in Resources */,
+				8433485D1D62EB810033FEF6 /* BTCRestoreViewController.xib in Resources */,
+				9C2C2A791DA395330059F423 /* settings_icon@3x.png in Resources */,
+				842B0A7F1D74152A0090DC4C /* BTCPasswordViewController.xib in Resources */,
+				9C717BAB1D9EA2BE00AF0FCB /* menu_icon@2x.png in Resources */,
+				9C2C2A7C1DA395330059F423 /* wallet_icon@3x.png in Resources */,
+				8402AE351D65BAD30013CCEF /* BTCMainViewController.xib in Resources */,
+				75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */,
+				9C2C2A811DA3968B0059F423 /* receive_icon@2x.png in Resources */,
+				9C2C2A871DA398A30059F423 /* send_icon@2x.png in Resources */,
+				9C2C2A861DA398A30059F423 /* send_icon.png in Resources */,
+				84FCC38C1D6745D3006B0860 /* BTCSelectorOptionCell.xib in Resources */,
+				842D98FB1D7D63E800DECAFA /* BTCFeeCell.xib in Resources */,
+				9C2C2A7B1DA395330059F423 /* wallet_icon@2x.png in Resources */,
+				846227F91D6AE9E600D1DDE7 /* BTCTitleCell.xib in Resources */,
+				75C0E3BF1B1BA294007BC531 /* BIP39Words.plist in Resources */,
+				843348741D6315000033FEF6 /* BTCNumberViewController.xib in Resources */,
+				9C2C2A6F1DA395330059F423 /* about_icon@2x.png in Resources */,
+				75E83CF61B5F997A0038FB70 /* coinflip.aiff in Resources */,
+				9C2C2A821DA3968B0059F423 /* receive_icon@3x.png in Resources */,
+				84FCC38E1D67460E006B0860 /* BTCSwitchCell.xib in Resources */,
+				840531A81D6C330400ED307A /* BTCAboutViewController.xib in Resources */,
+				9C2C2A7A1DA395330059F423 /* wallet_icon.png in Resources */,
+				9C2C2A781DA395330059F423 /* settings_icon@2x.png in Resources */,
+				846227FF1D6AEAED00D1DDE7 /* BTCSubtitleCell.xib in Resources */,
+				846228041D6AF89700D1DDE7 /* BTCSettingsViewController.xib in Resources */,
+				9C2C2A881DA398A30059F423 /* send_icon@3x.png in Resources */,
+				9C2C2A701DA395330059F423 /* about_icon@3x.png in Resources */,
+				84FCC3861D673981006B0860 /* BTCDislocureCell.xib in Resources */,
+				840E460A1D7861490094E8DA /* BTCUnitCell.xib in Resources */,
+				84FCC38A1D674562006B0860 /* BTCRestoreCell.xib in Resources */,
+				843348791D6361760033FEF6 /* BTCCameraViewController.xib in Resources */,
+				846227FB1D6AEA3D00D1DDE7 /* BTCTrzMinCell.xib in Resources */,
+				84FCC3841D673942006B0860 /* BTCActionCell.xib in Resources */,
+				84FD13CC1D8BD80E000EA4F9 /* Design.xcassets in Resources */,
+				752E28F719235B3000DB5A3C /* FixedPeers.plist in Resources */,
+				846228091D6B2E5400D1DDE7 /* BTCCurrencyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA913BDC1BD57E4D005A7C0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7B537B1BDD1DCF00355E8D /* LoadingIndicator.xcassets in Resources */,
+				BA913BE41BD57E4D005A7C0E /* Assets.xcassets in Resources */,
+				BA913BE21BD57E4D005A7C0E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA913BE81BD57E4D005A7C0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE12BE31B2DEE7F00895CC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA54D3CE1B2EA74000C9CB28 /* Media.xcassets in Resources */,
+				75ABFB661B55BB2300B0B5CC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75D5F3BA191EC270004AB296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842F0A711D758FB0003F49E1 /* BTCPasswordButton.m in Sources */,
+				22F04A001C9714EF00F137D8 /* BTCUserDefaultsSwitchCell.m in Sources */,
+				845A37F01D9BCCF800B94DF5 /* BTCTextViewLocalizable.m in Sources */,
+				752E28AA19234AE300DB5A3C /* BTCAddressEntity.m in Sources */,
+				75AA5F55194143D5003F23BD /* BTCBouncyBurgerButton.m in Sources */,
+				9C717BA81D9E88FC00AF0FCB /* BTCSideMenuViewController.m in Sources */,
+				84FD13CF1D8BE05C000EA4F9 /* BTCButton.m in Sources */,
+				845A37F31D9BCD0D00B94DF5 /* BTCLabelLocalizable.m in Sources */,
+				752E28AB19234AE300DB5A3C /* BTCMerkleBlockEntity.m in Sources */,
+				BA7B53501BDA9A2800355E8D /* BTCAppleWatchData.m in Sources */,
+				752E28AC19234AE300DB5A3C /* BTCPeerEntity.m in Sources */,
+				752E28AD19234AE300DB5A3C /* BTCTransactionEntity.m in Sources */,
+				752E28AE19234AE300DB5A3C /* BTCTxInputEntity.m in Sources */,
+				752E28AF19234AE300DB5A3C /* BTCTxOutputEntity.m in Sources */,
+				22DE8CF11D02407F007F07F3 /* BTCWalletConstants.m in Sources */,
+				840B3CD01D6DEAE50021328C /* BTCAnimation.m in Sources */,
+				BAA4843C1B3EFFAF0075C749 /* UIImage+Utils.m in Sources */,
+				843348731D6315000033FEF6 /* BTCNumberViewController.m in Sources */,
+				843348611D62FB190033FEF6 /* BTCStartViewController.m in Sources */,
+				BA7B535C1BDBC36700355E8D /* BTCTransaction+Utils.m in Sources */,
+				843348781D6361760033FEF6 /* BTCCameraViewController.m in Sources */,
+				7548CF3719556FD700EF827F /* BTCCopyLabel.m in Sources */,
+				843348661D6304F30033FEF6 /* BTCKeyViewController.m in Sources */,
+				752E28D119234C3600DB5A3C /* BTCKey.m in Sources */,
+				752E28D219234C3600DB5A3C /* BTCKey+BIP38.m in Sources */,
+				8402AE391D65BCDB0013CCEF /* BTCReceiveViewController.m in Sources */,
+				752E28D919234C3600DB5A3C /* BTCTransaction.m in Sources */,
+				752E28CE19234C3600DB5A3C /* BTCBIP32Sequence.m in Sources */,
+				BAC7B6BE1BD9C29900165B84 /* BTCPhoneWCSessionManager.m in Sources */,
+				752E28CF19234C3600DB5A3C /* BTCBIP39Mnemonic.m in Sources */,
+				752E28DA19234C3600DB5A3C /* BTCWallet.m in Sources */,
+				846227F41D6AE49D00D1DDE7 /* BTCTrzDetailViewController.m in Sources */,
+				752E28DB19234C3600DB5A3C /* BTCWalletManager.m in Sources */,
+				752E28D319234C3600DB5A3C /* BTCMerkleBlock.m in Sources */,
+				752E28D019234C3600DB5A3C /* BTCBloomFilter.m in Sources */,
+				752E28D619234C3600DB5A3C /* BTCPeer.m in Sources */,
+				842B0A7E1D74152A0090DC4C /* BTCPasswordViewController.m in Sources */,
+				9C717BA21D9E6EDD00AF0FCB /* BTCMenuViewController.m in Sources */,
+				752E28D819234C3600DB5A3C /* BTCPeerManager.m in Sources */,
+				752E28D419234C3600DB5A3C /* BTCPaymentProtocol.m in Sources */,
+				846228031D6AF89700D1DDE7 /* BTCSettingsViewController.m in Sources */,
+				752E28D519234C3600DB5A3C /* BTCPaymentRequest.m in Sources */,
+				75F2E0D61BEAA6A400EAE861 /* BTCTxMetadataEntity.m in Sources */,
+				759816E719357D6F005060EA /* BTCBubbleView.m in Sources */,
+				846228081D6B2E5400D1DDE7 /* BTCCurrencyViewController.m in Sources */,
+				752E28E719234DA200DB5A3C /* NSData+Bitcoin.m in Sources */,
+				841E6F771D70437C00611974 /* BTCProgressView.m in Sources */,
+				28BABAE51D911FA8008A1BB8 /* BTCWallet.xcdatamodeld in Sources */,
+				8433486B1D63117D0033FEF6 /* BTCSendViewController.m in Sources */,
+				220128D31C753C670001CAC1 /* BTCSocketHelpers.c in Sources */,
+				752E28E919234DA200DB5A3C /* NSManagedObject+Sugar.m in Sources */,
+				BA7B53541BDAA0A800355E8D /* BTCAppleWatchTransactionData.m in Sources */,
+				8402AE341D65BAD30013CCEF /* BTCMainViewController.m in Sources */,
+				752E28EA19234DA200DB5A3C /* NSMutableData+Bitcoin.m in Sources */,
+				9C717BA91D9E88FC00AF0FCB /* BTCSideMenuOptions.m in Sources */,
+				752E28EB19234DA200DB5A3C /* NSString+Bitcoin.m in Sources */,
+				8433485C1D62EB810033FEF6 /* BTCRestoreViewController.m in Sources */,
+				75D5F3D2191EC270004AB296 /* BTCAppDelegate.m in Sources */,
+				752E28F119234E8100DB5A3C /* Reachability.m in Sources */,
+				840531A71D6C330400ED307A /* BTCAboutViewController.m in Sources */,
+				75D5F3CE191EC270004AB296 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA913BE61BD57E4D005A7C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2284B63F1C7BD28F0012ECDF /* BTCAWKeypad.swift in Sources */,
+				BA7B53551BDAA0A800355E8D /* BTCAppleWatchTransactionData.m in Sources */,
+				BA7B53751BDBDB0500355E8D /* BTCAWWatchDataManager.swift in Sources */,
+				BAA6E3F11BD5CA5900773205 /* BTCAWReceiveMoneyInterfaceController.swift in Sources */,
+				BAA0E8CA1BD9273700DF4236 /* BTCAWGlanceInterfaceController.swift in Sources */,
+				BA4A72671BE11AFA00E39C01 /* BTCAWWeakTimerTarget.swift in Sources */,
+				BA7B53511BDA9A2800355E8D /* BTCAppleWatchData.m in Sources */,
+				BAA6E3EF1BD5CA0E00773205 /* BTCAWBalanceInterfaceController.swift in Sources */,
+				BA913BF21BD57E4D005A7C0E /* ExtensionDelegate.swift in Sources */,
+				BA6645961BD924EB007A6BB1 /* BTCAWTransactionRowControl.swift in Sources */,
+				BAA6E3EB1BD5C78500773205 /* BTCAWRootInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE12BE11B2DEE7F00895CC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE8CF21D02407F007F07F3 /* BTCWalletConstants.m in Sources */,
+				BAE12C061B2DEEF700895CC5 /* BTCTodayViewController.m in Sources */,
+				BAA4843D1B3EFFAF0075C749 /* UIImage+Utils.m in Sources */,
+				75E2503F1B7691C900A2BB2B /* BTCBubbleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		757FC2531ADA30D100A1FDF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75001D3D1A1EE89500585F55 /* submodules */;
+			targetProxy = 757FC2521ADA30D100A1FDF7 /* PBXContainerItemProxy */;
+		};
+		BA913BED1BD57E4D005A7C0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA913BE91BD57E4D005A7C0E /* WatchApp Extension */;
+			targetProxy = BA913BEC1BD57E4D005A7C0E /* PBXContainerItemProxy */;
+		};
+		BA913BF91BD57E4D005A7C0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA913BDD1BD57E4D005A7C0E /* WatchApp */;
+			targetProxy = BA913BF81BD57E4D005A7C0E /* PBXContainerItemProxy */;
+		};
+		BAE12BF11B2DEE7F00895CC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAE12BE41B2DEE7F00895CC5 /* TodayExtension */;
+			targetProxy = BAE12BF01B2DEE7F00895CC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		757E09971ADB8EEB006FD352 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				757E09981ADB8EEB006FD352 /* en */,
+				7511E8CB1AE5FF240025F1B3 /* fr */,
+				7511E8CF1AE5FF2D0025F1B3 /* ja */,
+				7511E8D31AE5FF390025F1B3 /* ko */,
+				7511E8D71AE5FF410025F1B3 /* nb */,
+				7511E8DF1AE5FFB50025F1B3 /* sq */,
+				7511E8E31AE5FFCC0025F1B3 /* nl */,
+				7511E8E71AE5FFD70025F1B3 /* da */,
+				7511E8EB1AE600220025F1B3 /* de */,
+				750BF6C91AEB2417004D9893 /* hu */,
+				7509C10E1AF3076100D03FD5 /* zh-Hans */,
+				7509C1121AF3720100D03FD5 /* es */,
+				75DE02411B0EB79A0027FF08 /* it */,
+				75DE02451B0EB7BD0027FF08 /* sv */,
+				75DE02491B0EB7C80027FF08 /* tr */,
+				75DE024D1B0EB7FC0027FF08 /* pl */,
+				75DE02511B0EB8030027FF08 /* ru */,
+				750C6CC01B5C8EB60038AAE9 /* el */,
+				75CE194E1B9642EB000778E4 /* pt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		75ABFB681B55BB2300B0B5CC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75ABFB671B55BB2300B0B5CC /* Base */,
+				75ABFB6A1B55BB3500B0B5CC /* en */,
+				75ABFB6C1B55BB3600B0B5CC /* fr */,
+				75ABFB6E1B55BB3800B0B5CC /* ja */,
+				75ABFB701B55BB3B00B0B5CC /* ko */,
+				75ABFB721B55BB3C00B0B5CC /* nb */,
+				75ABFB741B55BB3D00B0B5CC /* sq */,
+				75ABFB761B55BB3E00B0B5CC /* nl */,
+				75ABFB781B55BB4000B0B5CC /* da */,
+				75ABFB7A1B55BB4200B0B5CC /* de */,
+				75ABFB7C1B55BB4400B0B5CC /* hu */,
+				75ABFB7E1B55BB4500B0B5CC /* zh-Hans */,
+				75ABFB801B55BB4600B0B5CC /* es */,
+				75ABFB821B55BB4700B0B5CC /* it */,
+				75ABFB841B55BB4800B0B5CC /* sv */,
+				75ABFB861B55BB4C00B0B5CC /* tr */,
+				75ABFB881B55BB4D00B0B5CC /* pl */,
+				75ABFB8A1B55BB4E00B0B5CC /* ru */,
+				750C6CC21B5C8EB60038AAE9 /* el */,
+				75CE194D1B9642EB000778E4 /* pt */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		75C0E3C11B1BA294007BC531 /* BIP39Words.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C0E3C71B1D333F007BC531 /* en */,
+				75C0E3C21B1BA29D007BC531 /* fr */,
+				75C0E3C31B1BA29F007BC531 /* ja */,
+				75C0E3C41B1BA2A5007BC531 /* es */,
+				75C0E3C51B1BA2AE007BC531 /* zh-Hans */,
+			);
+			name = BIP39Words.plist;
+			sourceTree = "<group>";
+		};
+		BA913BE01BD57E4D005A7C0E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA913BE11BD57E4D005A7C0E /* Base */,
+				756A8F131CE566F6007893E2 /* en */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75001D3F1A1EE89500585F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		75001D411A1EE89500585F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		75D5F3F4191EC270004AB296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-frandom-seed=$@";
+				SDKROOT = iphoneos;
+				ZERO_AR_DATE = 1;
+			};
+			name = Debug;
+		};
+		75D5F3F5191EC270004AB296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-frandom-seed=$@";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				ZERO_AR_DATE = 1;
+			};
+			name = Release;
+		};
+		75D5F3F7191EC270004AB296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BTCWallet/btcwallet.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRX3M2AE8B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTCWallet/BTCWallet-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/secp256k1",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BTCWallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BTCWallet/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.trubs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BTCWallet/btcwallet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		75D5F3F8191EC270004AB296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BTCWallet/btcwallet.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRX3M2AE8B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTCWallet/BTCWallet-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/secp256k1",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BTCWallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BTCWallet/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.trubs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BTCWallet/btcwallet-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		BA913BFB1BD57E4E005A7C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRX3M2AE8B;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.trubs.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BA913BFC1BD57E4E005A7C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRX3M2AE8B;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.trubs.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		BA913BFD1BD57E4E005A7C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRX3M2AE8B;
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.trubs.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchApp Extension/WatchApp Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BA913BFE1BD57E4E005A7C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JRX3M2AE8B;
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.trubs.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchApp Extension/WatchApp Extension-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		BAE12BF31B2DEE7F00895CC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = BTCWallet/btcwallet.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JRX3M2AE8B;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "xxx.trubs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAE12BF51B2DEE7F00895CC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = BTCWallet/btcwallet.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JRX3M2AE8B;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "xxx.trubs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75001D3E1A1EE89500585F55 /* Build configuration list for PBXLegacyTarget "submodules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75001D3F1A1EE89500585F55 /* Debug */,
+				75001D411A1EE89500585F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75D5F3B9191EC270004AB296 /* Build configuration list for PBXProject "BTCWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D5F3F4191EC270004AB296 /* Debug */,
+				75D5F3F5191EC270004AB296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75D5F3F6191EC270004AB296 /* Build configuration list for PBXNativeTarget "btcwallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D5F3F7191EC270004AB296 /* Debug */,
+				75D5F3F8191EC270004AB296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA913BFF1BD57E4E005A7C0E /* Build configuration list for PBXNativeTarget "WatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA913BFD1BD57E4E005A7C0E /* Debug */,
+				BA913BFE1BD57E4E005A7C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA913C011BD57E4E005A7C0E /* Build configuration list for PBXNativeTarget "WatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA913BFB1BD57E4E005A7C0E /* Debug */,
+				BA913BFC1BD57E4E005A7C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE12BF61B2DEE7F00895CC5 /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE12BF31B2DEE7F00895CC5 /* Debug */,
+				BAE12BF51B2DEE7F00895CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28BABAE21D911FA8008A1BB8 /* BTCWallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28BABAE31D911FA8008A1BB8 /* BTCWallet 2.xcdatamodel */,
+				28BABAE41D911FA8008A1BB8 /* BTCWallet.xcdatamodel */,
+			);
+			currentVersion = 28BABAE31D911FA8008A1BB8 /* BTCWallet 2.xcdatamodel */;
+			path = BTCWallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75D5F3B6191EC270004AB296 /* Project object */;
+}
